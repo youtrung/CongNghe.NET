@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnLuuNhanVien = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@
             this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnLuuNhanVien = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSNV)).BeginInit();
             this.SuspendLayout();
@@ -91,6 +91,21 @@
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin";
+            // 
+            // btnLuuNhanVien
+            // 
+            this.btnLuuNhanVien.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnLuuNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnLuuNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuNhanVien.Image")));
+            this.btnLuuNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuuNhanVien.Location = new System.Drawing.Point(233, 278);
+            this.btnLuuNhanVien.Name = "btnLuuNhanVien";
+            this.btnLuuNhanVien.Size = new System.Drawing.Size(94, 36);
+            this.btnLuuNhanVien.TabIndex = 53;
+            this.btnLuuNhanVien.Text = " LƯU    ";
+            this.btnLuuNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLuuNhanVien.UseVisualStyleBackColor = false;
+            this.btnLuuNhanVien.Click += new System.EventHandler(this.btnLuuNhanVien_Click);
             // 
             // btnSua
             // 
@@ -226,7 +241,7 @@
             this.dgvDSNV.Name = "dgvDSNV";
             this.dgvDSNV.ReadOnly = true;
             this.dgvDSNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSNV.Size = new System.Drawing.Size(416, 250);
+            this.dgvDSNV.Size = new System.Drawing.Size(410, 250);
             this.dgvDSNV.TabIndex = 3;
             this.dgvDSNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSNV_CellContentClick);
             this.dgvDSNV.SelectionChanged += new System.EventHandler(this.dgvDSNV_SelectionChanged);
@@ -289,21 +304,6 @@
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // btnLuuNhanVien
-            // 
-            this.btnLuuNhanVien.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnLuuNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnLuuNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuNhanVien.Image")));
-            this.btnLuuNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuuNhanVien.Location = new System.Drawing.Point(233, 278);
-            this.btnLuuNhanVien.Name = "btnLuuNhanVien";
-            this.btnLuuNhanVien.Size = new System.Drawing.Size(94, 36);
-            this.btnLuuNhanVien.TabIndex = 53;
-            this.btnLuuNhanVien.Text = " LƯU    ";
-            this.btnLuuNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLuuNhanVien.UseVisualStyleBackColor = false;
-            this.btnLuuNhanVien.Click += new System.EventHandler(this.btnLuuNhanVien_Click);
             // 
             // frmNhanVien
             // 

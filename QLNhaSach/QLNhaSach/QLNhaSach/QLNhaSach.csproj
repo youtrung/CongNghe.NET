@@ -209,20 +209,6 @@
     <None Include="DataBaoCaoNo.xss">
       <DependentUpon>DataBaoCaoNo.xsd</DependentUpon>
     </None>
-    <None Include="DataBaoCaoTon.xsc">
-      <DependentUpon>DataBaoCaoTon.xsd</DependentUpon>
-    </None>
-    <None Include="DataBaoCaoTon.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataBaoCaoTon.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataBaoCaoTon.xss">
-      <DependentUpon>DataBaoCaoTon.xsd</DependentUpon>
-    </None>
-    <None Include="dbMain.dbml.layout">
-      <DependentUpon>dbMain.dbml</DependentUpon>
-    </None>
     <EmbeddedResource Include="frmReport2.resx">
       <DependentUpon>frmReport2.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,10 +268,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataBaoCaoTon.xsc">
+      <DependentUpon>DataBaoCaoTon.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaoCaoTon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaoCaoTon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBaoCaoTon.xss">
+      <DependentUpon>DataBaoCaoTon.xsd</DependentUpon>
+    </None>
     <None Include="dbMain.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>dbMain.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </None>
+    <None Include="dbMain.dbml.layout">
+      <DependentUpon>dbMain.dbml</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
