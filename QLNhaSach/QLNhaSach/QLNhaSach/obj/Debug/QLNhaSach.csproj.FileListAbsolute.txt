@@ -105,6 +105,7 @@ D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.Properties.Resources.resour
 D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.GenerateResource.Cache
 D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.cache
 D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.compiled
+<<<<<<< HEAD
 C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.exe.config
 C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
 C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.pdb
@@ -129,3 +130,8 @@ C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\
 C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.GenerateResource.Cache
 C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.cache
 C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.compiled
+=======
+E:\Congnghe.netGit\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.exe.config
+E:\Congnghe.netGit\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
+E:\Congnghe.netGit\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.pdb
+>>>>>>> fbb3d2efac4cde443cb98fbe5bc723015f2fb650
