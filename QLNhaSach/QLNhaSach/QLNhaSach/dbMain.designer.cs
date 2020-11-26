@@ -63,7 +63,7 @@ namespace QLNhaSach
     #endregion
 		
 		public dbMainDataContext() : 
-				base(global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString, mappingSource)
+				base(global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}

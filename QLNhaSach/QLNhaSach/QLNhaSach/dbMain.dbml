@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLNHASACH" Class="dbMainDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=QLNHASACH;Integrated Security=True" SettingsObjectName="QLNhaSach.Properties.Settings" SettingsPropertyName="QLNHASACHConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-VOAB2UJ\SQLEXPRESS;Initial Catalog=QLNHASACH;Integrated Security=True" SettingsObjectName="QLNhaSach.Properties.Settings" SettingsPropertyName="QLNHASACHConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Account" Member="Accounts">
     <Type Name="Account">
       <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
