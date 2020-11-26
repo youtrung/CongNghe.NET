@@ -34,11 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-<<<<<<< HEAD
     <Reference Include="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
-=======
     <Reference Include="System.Data.Linq" />
->>>>>>> 4251bb16fa099a908a1f8b4033e585a366ea1862
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="GIAODIEN\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,70 +64,14 @@
     <Compile Include="GIAODIEN\FormPhieuNhap.Designer.cs">
       <DependentUpon>FormPhieuNhap.cs</DependentUpon>
     </Compile>
-=======
-<<<<<<< HEAD
-    <Compile Include="GIAODIEN\FrmChuongtrinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FrmChuongtrinh.Designer.cs">
-      <DependentUpon>FrmChuongtrinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GIAODIEN\FrmDoiMatKhau.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FrmDoiMatKhau.Designer.cs">
-      <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GIAODIEN\FrmHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FrmHoaDon.Designer.cs">
-      <DependentUpon>FrmHoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GIAODIEN\FrmKhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FrmKhachHang.Designer.cs">
-      <DependentUpon>FrmKhachHang.cs</DependentUpon>
-    </Compile>
-=======
-<<<<<<< HEAD
-    <Compile Include="dbMain.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbMain.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmBanSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmBanSach.Designer.cs">
-      <DependentUpon>frmBanSach.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="dbMain.dbml.layout">
-      <DependentUpon>dbMain.dbml</DependentUpon>
-    </None>
-    <EmbeddedResource Include="frmBanSach.resx">
-      <DependentUpon>frmBanSach.cs</DependentUpon>
-    </EmbeddedResource>
-=======
->>>>>>> 0dad8f681217550a82adc6c6fe08a48c8b7dbe26
->>>>>>> d6c1a0a7fe9c11ed1b7bee2b10a24ab473360b77
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLNS.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNS.dbml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <EmbeddedResource Include="GIAODIEN\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,24 +81,6 @@
     <EmbeddedResource Include="GIAODIEN\FormPhieuNhap.resx">
       <DependentUpon>FormPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
-=======
-<<<<<<< HEAD
-    <EmbeddedResource Include="GIAODIEN\FrmChuongtrinh.resx">
-      <DependentUpon>FrmChuongtrinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FrmDoiMatKhau.resx">
-      <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FrmHoaDon.resx">
-      <DependentUpon>FrmHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FrmKhachHang.resx">
-      <DependentUpon>FrmKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-=======
->>>>>>> 4251bb16fa099a908a1f8b4033e585a366ea1862
->>>>>>> 0dad8f681217550a82adc6c6fe08a48c8b7dbe26
->>>>>>> d6c1a0a7fe9c11ed1b7bee2b10a24ab473360b77
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -168,11 +90,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="dbMain.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>dbMain.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -197,20 +114,9 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
-=======
-<<<<<<< HEAD
   <ItemGroup />
-=======
-<<<<<<< HEAD
-=======
-  <ItemGroup>
-    <Folder Include="GIAODIEN\" />
-  </ItemGroup>
->>>>>>> 4251bb16fa099a908a1f8b4033e585a366ea1862
->>>>>>> 0dad8f681217550a82adc6c6fe08a48c8b7dbe26
->>>>>>> d6c1a0a7fe9c11ed1b7bee2b10a24ab473360b77
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
