@@ -5421,7 +5421,7 @@ SELECT UserName, PassWord FROM Account WHERE (UserName = @UserName)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5784,7 +5784,7 @@ SELECT MaPhieuNhap, MaSach, SoLuong, DonGia, TongTien FROM ChiTietPhieuNhap WHER
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6230,7 +6230,7 @@ SELECT MaHD, MaKH, TenKH, Ngaylap, TongTien FROM HoaDon WHERE (MaHD = @MaHD)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6690,7 +6690,7 @@ SELECT MaKh, HoTen, SDT, DiaChi, Email, NoDau, PhatSinh, TongNo FROM KhachHang W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7215,7 +7215,7 @@ SELECT Email, HoTen, DiaChi, SDT, PassWord FROM NhanVien WHERE (Email = @Email)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7632,7 +7632,7 @@ SELECT MaPhieuBan, MaSach, SoLuong FROM PhieuBan WHERE (MaPhieuBan = @MaPhieuBan
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7981,7 +7981,7 @@ SELECT MaPhieuNhap, TongTien, NgayNhap FROM PhieuNhap WHERE (MaPhieuNhap = @MaPh
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8316,7 +8316,7 @@ SELECT MaPhieuThu, MaKH, NgayThu, SoTienThu FROM PhieuThu WHERE (MaPhieuThu = @M
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8677,7 +8677,7 @@ SELECT MaQuyDinh, NhapToiThieu, TonNhapToiThieu, KHNoToiThieu, TonBanToiThieu FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9116,7 +9116,7 @@ SELECT MaSach, TenSach, TheLoai, TacGia, DonGia, TonDau, TongNhap, TongBan, Phat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString;
+            this._connection.ConnectionString = global::QLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

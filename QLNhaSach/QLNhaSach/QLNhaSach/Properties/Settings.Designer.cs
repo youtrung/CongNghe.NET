@@ -12,7 +12,7 @@ namespace QLNhaSach.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.6.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -87,6 +87,17 @@ namespace QLNhaSach.Properties {
         public string QLNHASACHConnectionString {
             get {
                 return ((string)(this["QLNHASACHConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-VOAB2UJ\\SQLEXPRESS;Initial Catalog=QLNHASACH;Integrated Secur" +
+            "ity=True")]
+        public string QLNHASACHConnectionString1 {
+            get {
+                return ((string)(this["QLNHASACHConnectionString1"]));
             }
         }
     }

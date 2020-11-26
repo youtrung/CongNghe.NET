@@ -106,6 +106,7 @@ D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.GenerateResource.Cac
 D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.cache
 D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.compiled
 <<<<<<< HEAD
+<<<<<<< HEAD
 D:\gitcom\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.exe.config
 D:\gitcom\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
 D:\gitcom\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.pdb
@@ -130,6 +131,32 @@ D:\gitcom\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.Propert
 D:\gitcom\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.GenerateResource.Cache
 D:\gitcom\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.cache
 D:\gitcom\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.compiled
+=======
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.exe.config
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.pdb
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csprojResolveAssemblyReference.cache
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmReport2.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmReport1.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmHoaDon.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GiaoDien.frmChiTietPhieuNhap.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmPhieuNhap.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmBanSach.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmBaoCao1.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmBaoCao2.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmChuongtrinh.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.GiaoDien.frmDoiMatKhau.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmKhachHang.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmLogin.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmNhanVien.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmQuyDinh.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmSach.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.frmThuTien.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.Properties.Resources.resources
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.GenerateResource.Cache
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.cache
+C:\Users\PC-DELL0311\Desktop\DoAnNet\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.compiled
+>>>>>>> 4251bb16fa099a908a1f8b4033e585a366ea1862
 =======
 E:\Congnghe.netGit\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.exe.config
 E:\Congnghe.netGit\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
