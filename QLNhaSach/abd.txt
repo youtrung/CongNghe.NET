@@ -1,2 +1,7 @@
 sdsd
+<<<<<<< HEAD
+
+jhhhuh
+=======
 asd cokoks
+>>>>>>> c28965fb94df57669ee250795d394dc588eed6b8
