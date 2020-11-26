@@ -57,6 +57,18 @@
     <Compile Include="GIAODIEN\FrmDoiMatKhau.Designer.cs">
       <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="GIAODIEN\FrmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FrmHoaDon.Designer.cs">
+      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIAODIEN\FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLNS.designer.cs">
@@ -69,6 +81,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GIAODIEN\FrmDoiMatKhau.resx">
       <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FrmHoaDon.resx">
+      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FrmKhachHang.resx">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
