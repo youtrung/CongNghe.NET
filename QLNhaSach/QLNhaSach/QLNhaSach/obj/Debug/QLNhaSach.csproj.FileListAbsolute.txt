@@ -105,3 +105,6 @@ D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.Properties.Resources.resour
 D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.csproj.GenerateResource.Cache
 D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.cache
 D:\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\RdlCompile.compiled
+E:\Congnghe.netGit\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\bin\Debug\QLNhaSach.exe.config
+E:\Congnghe.netGit\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.exe
+E:\Congnghe.netGit\CongNghe.NET\QLNhaSach\QLNhaSach\QLNhaSach\obj\Debug\QLNhaSach.pdb
