@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTaikhoan = new System.Windows.Forms.TextBox();
             this.txtMk = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.rdHtmk = new System.Windows.Forms.RadioButton();
             this.btnLogin = new System.Windows.Forms.Button();
             this.cbbQuyen = new System.Windows.Forms.ComboBox();
@@ -150,7 +148,6 @@
         private System.Windows.Forms.TextBox txtTaikhoan;
         private System.Windows.Forms.TextBox txtMk;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.RadioButton rdHtmk;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.ComboBox cbbQuyen;
