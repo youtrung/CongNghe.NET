@@ -33,7 +33,7 @@ namespace DoanQLNhaSach.GIAODIEN
                        select new
                        {
                            MAPN = k.MaPhieuNhap,
-                           NGAYNHAP =string.Format("{0:dd/MM/yyyy}",k.NgayNhap),
+                           NGAYNHAP =k.NgayNhap,
                            //TONGTIEN=t==null?"<null>":t.TongTien.ToString()
                            TONGTIEN =db.ChiTietPhieuNhaps.Where(r => r.MaPhieuNhap == k.MaPhieuNhap).Select(qwe => qwe.SoLuong * qwe.DonGia).Sum()==null?"0": db.ChiTietPhieuNhaps.Where(r => r.MaPhieuNhap == k.MaPhieuNhap).Select(qwe => qwe.SoLuong * qwe.DonGia).Sum().ToString()
                        };
@@ -78,8 +78,10 @@ namespace DoanQLNhaSach.GIAODIEN
                 if (MessageBox.Show("Bạn có chắc muốn xoá phiếu nhập này?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
                 {
                     db.PhieuNhaps.DeleteOnSubmit(kt);
+                    db.SubmitChanges();
                     MessageBox.Show("Xoá thành công!");
                     loadData();
+                    
                 }
                     
                 
@@ -117,8 +119,8 @@ namespace DoanQLNhaSach.GIAODIEN
 
            
             txtMaPN.Text = sv.MAPN;
-            string  dt= string.Format("{0:dd/MM/yyyy}", sv.NGAYNHAP);
-            dtpNgaynhap.Value =DateTime.Parse(dt) ;
+
+            dtpNgaynhap.Value = sv.NGAYNHAP;
             txtTongTien.Text = sv.TONGTIEN;
         }
     }

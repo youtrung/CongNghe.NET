@@ -173,6 +173,7 @@
             this.btnUdp.TabIndex = 20;
             this.btnUdp.Text = "Cập Nhập";
             this.btnUdp.UseVisualStyleBackColor = true;
+            this.btnUdp.Click += new System.EventHandler(this.btnUdp_Click);
             // 
             // btnThoat
             // 
@@ -182,6 +183,7 @@
             this.btnThoat.TabIndex = 21;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label1
             // 

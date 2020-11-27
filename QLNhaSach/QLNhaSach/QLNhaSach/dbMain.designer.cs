@@ -940,7 +940,7 @@ namespace QLNhaSach
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ngaylap", DbType="DateTime")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ngaylap", DbType="Date")]
 		public System.Nullable<System.DateTime> Ngaylap
 		{
 			get
@@ -1768,7 +1768,7 @@ namespace QLNhaSach
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayNhap", DbType="DateTime NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayNhap", DbType="Date NOT NULL")]
 		public System.DateTime NgayNhap
 		{
 			get
@@ -1914,7 +1914,7 @@ namespace QLNhaSach
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayThu", DbType="DateTime NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayThu", DbType="Date NOT NULL")]
 		public System.DateTime NgayThu
 		{
 			get

@@ -70,6 +70,7 @@
             this.txtMk.Name = "txtMk";
             this.txtMk.Size = new System.Drawing.Size(147, 20);
             this.txtMk.TabIndex = 3;
+            this.txtMk.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -91,6 +92,7 @@
             this.rdHtmk.TabStop = true;
             this.rdHtmk.Text = "hiển thị mật khẩu";
             this.rdHtmk.UseVisualStyleBackColor = true;
+            this.rdHtmk.CheckedChanged += new System.EventHandler(this.rdHtmk_CheckedChanged);
             // 
             // btnLogin
             // 

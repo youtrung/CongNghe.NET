@@ -21,6 +21,7 @@ namespace DoanQLNhaSach.GIAODIEN
         private void FormNhanVien_Load(object sender, EventArgs e)
         {
             loadnv();
+            btnLuu.Enabled = false;
         }
         public void loadnv()
         {
@@ -49,6 +50,7 @@ namespace DoanQLNhaSach.GIAODIEN
         {
             themNV();
             loadnv();
+            MessageBox.Show("Thêm Thành Công ", "Thông báo");
         }
         public void themNV()
         {
@@ -68,7 +70,7 @@ namespace DoanQLNhaSach.GIAODIEN
                 return;
             }
             var kt=db.NhanViens.Where(r => r.Email == txtEmail.Text).SingleOrDefault();
-            if (kt == null)
+            if (kt != null)
             {
                 MessageBox.Show("Email nhân viên này đã tồn tại ");
                 return;
@@ -85,6 +87,11 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            if (txtEmail.Text=="")
+            {
+                MessageBox.Show("Email không  được để trống  !");
+                return;
+            }
             xoa();
             MessageBox.Show("Xoá nhân viên thành công!");
             loadnv();
@@ -97,13 +104,38 @@ namespace DoanQLNhaSach.GIAODIEN
                 db.NhanViens.DeleteOnSubmit(kt);
                 db.SubmitChanges();
             }
+            else
+            {
+                MessageBox.Show("Email không tìm được !");
+                return;
+            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            // cần vô hiệu email 
-            sua();
-            loadnv();
+            if (btnSua.Tag.ToString().Equals("1"))
+            {
+                txtEmail.Enabled = false;
+                btnThem.Enabled = false;
+
+                btnXoa.Enabled = false;
+                btnLuu.Enabled = true;
+                btnSua.Tag = "2";
+                btnSua.Text = "Hủy Sửa";
+               
+            }
+            else
+            {
+                txtEmail.Enabled = true;
+                btnThem.Enabled = true;
+
+                btnXoa.Enabled = true;
+                btnLuu.Enabled = false;
+              
+                btnSua.Tag = "1";
+                btnSua.Text = "Sửa";
+            }
+
         }
         public void sua()
         {
@@ -115,6 +147,20 @@ namespace DoanQLNhaSach.GIAODIEN
                 kt.PassWord = txtPass.Text;
                 kt.SDT = txtPhone.Text;
                 db.SubmitChanges();
+                MessageBox.Show("Sửa thành công ");
+            }
+            else
+            {
+                MessageBox.Show("Email không tìm được !");
+                txtEmail.Enabled = true;
+                btnThem.Enabled = true;
+
+                btnXoa.Enabled = true;
+                btnLuu.Enabled = false;
+
+                btnSua.Tag = "1";
+                btnSua.Text = "Sửa";
+                return;
             }
         }
 
@@ -131,6 +177,12 @@ namespace DoanQLNhaSach.GIAODIEN
             txtDC.Text = sv.DIACHI;
             txtPhone.Text = sv.PHONE;
             txtPass.Text = sv.MATKHAU;
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            sua();
+            loadnv();
         }
     }
 }

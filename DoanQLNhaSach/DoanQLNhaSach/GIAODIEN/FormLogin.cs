@@ -27,13 +27,17 @@ namespace DoanQLNhaSach.GIAODIEN
                 if (cbbQuyen.Text== "User")
                 {
                     kiemtraQuyen = 1;
-                    NhanVien nv = db.NhanViens.Where(r => r.HoTen == txtTaikhoan.Text && r.PassWord == txtMk.Text).SingleOrDefault();
+                    NhanVien nv = db.NhanViens.Where(r => r.Email == txtTaikhoan.Text && r.PassWord == txtMk.Text).SingleOrDefault();
                     if (nv == null)
                     {
                         MessageBox.Show("Bạn đã nhập sai tên tài khoản hoặc mật khẩu!", "Cảnh Báo");
                         return;
                     }
                     getTK = txtTaikhoan.Text;
+                    this.Hide();
+                    FormQuyDinh frm = new FormQuyDinh();
+                    frm.ShowDialog();
+                    this.Close();
                 }
                 else  if (cbbQuyen.Text=="Admin")
                 {
@@ -45,6 +49,11 @@ namespace DoanQLNhaSach.GIAODIEN
                         return;
                     }
                     getTK = txtTaikhoan.Text;
+                    this.Hide();
+                   FormQuyDinh frm = new FormQuyDinh();
+                    frm.ShowDialog();
+                    this.Close();
+                   
 
                 }
                 else
@@ -63,6 +72,18 @@ namespace DoanQLNhaSach.GIAODIEN
         {
             cbbQuyen.Items.Add("Admin");
             cbbQuyen.Items.Add("User");
+        }
+
+        private void rdHtmk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdHtmk.Checked)
+            {
+                txtMk.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtMk.UseSystemPasswordChar = true;
+            }
         }
     }
 }

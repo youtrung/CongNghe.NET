@@ -198,17 +198,6 @@
     <Compile Include="DTO\TaiKhoanDTO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="DataBaoCaoNo.xsc">
-      <DependentUpon>DataBaoCaoNo.xsd</DependentUpon>
-    </None>
-    <None Include="DataBaoCaoNo.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataBaoCaoNo.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataBaoCaoNo.xss">
-      <DependentUpon>DataBaoCaoNo.xsd</DependentUpon>
-    </None>
     <EmbeddedResource Include="frmReport2.resx">
       <DependentUpon>frmReport2.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +257,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataBaoCaoNo.xsc">
+      <DependentUpon>DataBaoCaoNo.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaoCaoNo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaoCaoNo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBaoCaoNo.xss">
+      <DependentUpon>DataBaoCaoNo.xsd</DependentUpon>
+    </None>
     <None Include="DataBaoCaoTon.xsc">
       <DependentUpon>DataBaoCaoTon.xsd</DependentUpon>
     </None>
