@@ -16,7 +16,7 @@ namespace DoanQLNhaSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GIAODIEN.FormNhanVien());
+            Application.Run(new GIAODIEN.FormPhieuNhap());
         }
     }
 }
