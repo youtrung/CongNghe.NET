@@ -38,29 +38,20 @@
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataSach = new System.Windows.Forms.DataGridView();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
             this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-<<<<<<< HEAD
-=======
+
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSua = new System.Windows.Forms.Button();
-=======
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnSua = new System.Windows.Forms.Button();
-<<<<<<< HEAD
-=======
+
             this.btnXoa = new System.Windows.Forms.Button();
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
             this.btnThem = new System.Windows.Forms.Button();
             this.txtTheLoai = new System.Windows.Forms.TextBox();
             this.txtTenSach = new System.Windows.Forms.TextBox();
@@ -74,23 +65,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
+
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnReload = new System.Windows.Forms.Button();
-=======
-<<<<<<< HEAD
+
+
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-=======
+
             this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataSach)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -113,9 +103,7 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm Kiếm Thông Tin";
-            // 
-            // label3
-            // 
+         
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 63);
@@ -123,25 +111,18 @@
             this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 16;
             this.label3.Text = "Thể loại:";
-            // 
-            // cbTimTheLoai
-            // 
+     
             this.cbTimTheLoai.FormattingEnabled = true;
             this.cbTimTheLoai.Location = new System.Drawing.Point(88, 63);
             this.cbTimTheLoai.Name = "cbTimTheLoai";
             this.cbTimTheLoai.Size = new System.Drawing.Size(142, 24);
             this.cbTimTheLoai.TabIndex = 15;
-<<<<<<< HEAD
+
             this.cbTimTheLoai.SelectedIndexChanged += new System.EventHandler(this.cbTimTheLoai_SelectedIndexChanged);
-=======
-<<<<<<< HEAD
+
             this.cbTimTheLoai.SelectedIndexChanged += new System.EventHandler(this.cbTimTheLoai_SelectedIndexChanged);
-=======
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
-            // 
-            // radTenSach
-            // 
+
+        
             this.radTenSach.AutoSize = true;
             this.radTenSach.Location = new System.Drawing.Point(88, 105);
             this.radTenSach.Name = "radTenSach";
@@ -151,9 +132,7 @@
             this.radTenSach.Text = "Tên sách";
             this.radTenSach.UseVisualStyleBackColor = true;
             this.radTenSach.CheckedChanged += new System.EventHandler(this.radTenSach_CheckedChanged);
-            // 
-            // radTacGia
-            // 
+         
             this.radTacGia.AutoSize = true;
             this.radTacGia.Location = new System.Drawing.Point(176, 105);
             this.radTacGia.Name = "radTacGia";
@@ -163,9 +142,7 @@
             this.radTacGia.Text = "Tác giả";
             this.radTacGia.UseVisualStyleBackColor = true;
             this.radTacGia.CheckedChanged += new System.EventHandler(this.radTacGia_CheckedChanged);
-            // 
-            // radTatCa
-            // 
+          
             this.radTatCa.AutoSize = true;
             this.radTatCa.Location = new System.Drawing.Point(10, 105);
             this.radTatCa.Name = "radTatCa";
@@ -174,33 +151,24 @@
             this.radTatCa.TabStop = true;
             this.radTatCa.Text = "Tất cả";
             this.radTatCa.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
+
             this.radTatCa.CheckedChanged += new System.EventHandler(this.radTatCa_CheckedChanged);
-=======
-<<<<<<< HEAD
+
             this.radTatCa.CheckedChanged += new System.EventHandler(this.radTatCa_CheckedChanged);
-=======
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
-            // 
-            // txtTimKiem
-            // 
+
+
+        
             this.txtTimKiem.Location = new System.Drawing.Point(88, 29);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(151, 24);
             this.txtTimKiem.TabIndex = 10;
-<<<<<<< HEAD
+
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
-=======
-<<<<<<< HEAD
+
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
-=======
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
-            // 
-            // label2
-            // 
+
+       
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 31);
@@ -222,7 +190,7 @@
             this.LuongTon});
             this.dataSach.Location = new System.Drawing.Point(287, 24);
             this.dataSach.Name = "dataSach";
-<<<<<<< HEAD
+
             this.dataSach.Size = new System.Drawing.Size(703, 221);
             this.dataSach.TabIndex = 12;
             this.dataSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataSach_CellClick);
@@ -268,13 +236,12 @@
             this.LuongTon.DataPropertyName = "LuongTon";
             this.LuongTon.HeaderText = "Lượng Tồn";
             this.LuongTon.Name = "LuongTon";
-            // 
-=======
+
             this.dataSach.Size = new System.Drawing.Size(690, 221);
             this.dataSach.TabIndex = 12;
             this.dataSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataSach_CellClick);
             // 
-<<<<<<< HEAD
+
             // MaSach
             // 
             this.MaSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -317,9 +284,7 @@
             this.LuongTon.HeaderText = "Lượng Tồn";
             this.LuongTon.Name = "LuongTon";
             // 
-=======
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnSua);
@@ -344,10 +309,7 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin Sách";
             // 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
             // btnLuu
             // 
             this.btnLuu.BackColor = System.Drawing.Color.PaleGreen;
@@ -363,8 +325,7 @@
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -379,10 +340,7 @@
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -396,8 +354,7 @@
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -508,12 +465,7 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Mã Sách:";
             // 
-<<<<<<< HEAD
-            // btnLuu
-=======
-<<<<<<< HEAD
-            // btnLuu
-            // 
+
             this.btnLuu.BackColor = System.Drawing.Color.PaleGreen;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
@@ -539,7 +491,7 @@
             this.btnXoa.Text = "  XÓA";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-=======
+
             // MaSach
             // 
             this.MaSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -563,7 +515,7 @@
             this.TheLoai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // TacGia
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
             // 
             this.btnLuu.BackColor = System.Drawing.Color.PaleGreen;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
@@ -593,7 +545,7 @@
             // 
             // btnReload
             // 
-<<<<<<< HEAD
+
             this.btnReload.Location = new System.Drawing.Point(10, 155);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(75, 23);
@@ -601,12 +553,11 @@
             this.btnReload.Text = "Reload";
             this.btnReload.UseVisualStyleBackColor = true;
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
-=======
+
             this.LuongTon.DataPropertyName = "LuongTon";
             this.LuongTon.HeaderText = "Lượng Tồn";
             this.LuongTon.Name = "LuongTon";
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
             // 
             // FormSach
             // 

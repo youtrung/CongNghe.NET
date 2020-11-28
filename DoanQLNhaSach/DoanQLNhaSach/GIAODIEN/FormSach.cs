@@ -249,10 +249,6 @@ namespace DoanQLNhaSach.GIAODIEN
             }
             else
             {
-<<<<<<< HEAD
-                
-=======
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
                 Sach s = new Sach();
                 s.MaSach = masach;
                 s.TenSach = tensach;
@@ -346,7 +342,6 @@ namespace DoanQLNhaSach.GIAODIEN
 
 
         }
-<<<<<<< HEAD
 
         private void cbTimTheLoai_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -412,25 +407,9 @@ namespace DoanQLNhaSach.GIAODIEN
            
               
         }
-=======
-<<<<<<< HEAD
 
-        private void txtTimKiem_TextChanged(object sender, EventArgs e)
-        {
 
-        }
+        
 
-        private void cbTimTheLoai_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radTatCa_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-=======
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
     }
 }

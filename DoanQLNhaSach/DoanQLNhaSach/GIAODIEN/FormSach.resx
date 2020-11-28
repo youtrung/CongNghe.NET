@@ -135,10 +135,9 @@
   <metadata name="LuongTon.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
+
+
   <metadata name="MaSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -157,11 +156,7 @@
   <metadata name="LuongTon.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnSua.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -265,10 +260,7 @@
         C62GfuUAAAAASUVORK5CYII=
 </value>
   </data>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
   <metadata name="MaSach.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -287,6 +279,5 @@
   <metadata name="LuongTon.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
->>>>>>> 8862b469ab471492bde9e73abede639a45296b58
->>>>>>> 1819b85a294c88645b7edbf2f7279e5b53cc5f38
+
 </root>
