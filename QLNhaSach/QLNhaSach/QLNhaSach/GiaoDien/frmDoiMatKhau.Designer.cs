@@ -171,6 +171,7 @@
             this.btnHuy.Text = "  HỦY    ";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // frmDoiMatKhau
             // 

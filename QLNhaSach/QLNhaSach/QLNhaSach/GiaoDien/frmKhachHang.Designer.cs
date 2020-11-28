@@ -185,6 +185,7 @@
             this.label13.Size = new System.Drawing.Size(147, 16);
             this.label13.TabIndex = 31;
             this.label13.Text = "Danh sách khách hàng:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // groupBox2
             // 
