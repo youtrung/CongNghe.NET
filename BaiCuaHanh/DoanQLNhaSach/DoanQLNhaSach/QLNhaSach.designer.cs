@@ -23,7 +23,7 @@ namespace DoanQLNhaSach
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QLNHASACH")]
-	public partial class QLNSDataContext : System.Data.Linq.DataContext
+	public partial class QLNhaSachDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -62,31 +62,31 @@ namespace DoanQLNhaSach
     partial void DeleteQuyDinh(QuyDinh instance);
     #endregion
 		
-		public QLNSDataContext() : 
+		public QLNhaSachDataContext() : 
 				base(global::DoanQLNhaSach.Properties.Settings.Default.QLNHASACHConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public QLNSDataContext(string connection) : 
+		public QLNhaSachDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public QLNSDataContext(System.Data.IDbConnection connection) : 
+		public QLNhaSachDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public QLNSDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public QLNhaSachDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public QLNSDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public QLNhaSachDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -940,7 +940,7 @@ namespace DoanQLNhaSach
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ngaylap", DbType="Date")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ngaylap", DbType="DateTime")]
 		public System.Nullable<System.DateTime> Ngaylap
 		{
 			get
@@ -1768,7 +1768,7 @@ namespace DoanQLNhaSach
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayNhap", DbType="Date NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayNhap", DbType="DateTime NOT NULL")]
 		public System.DateTime NgayNhap
 		{
 			get
@@ -1914,7 +1914,7 @@ namespace DoanQLNhaSach
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayThu", DbType="Date NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayThu", DbType="DateTime NOT NULL")]
 		public System.DateTime NgayThu
 		{
 			get

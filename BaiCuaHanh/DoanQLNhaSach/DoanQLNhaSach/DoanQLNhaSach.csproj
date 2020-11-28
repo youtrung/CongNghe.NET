@@ -46,42 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GIAODIEN\FormLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GIAODIEN\FormNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FormNhanVien.Designer.cs">
-      <DependentUpon>FormNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GIAODIEN\FormPhieuNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FormPhieuNhap.Designer.cs">
-      <DependentUpon>FormPhieuNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GIAODIEN\FormQuyDinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FormQuyDinh.Designer.cs">
-      <DependentUpon>FormQuyDinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GIAODIEN\FormSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FormSach.Designer.cs">
-      <DependentUpon>FormSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GIAODIEN\FormThuTien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GIAODIEN\FormThuTien.Designer.cs">
-      <DependentUpon>FormThuTien.cs</DependentUpon>
-    </Compile>
     <Compile Include="hanh\frmBanSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,29 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLNS.designer.cs">
+    <Compile Include="QLNhaSach.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QLNS.dbml</DependentUpon>
+      <DependentUpon>QLNhaSach.dbml</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="GIAODIEN\FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FormNhanVien.resx">
-      <DependentUpon>FormNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FormPhieuNhap.resx">
-      <DependentUpon>FormPhieuNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FormQuyDinh.resx">
-      <DependentUpon>FormQuyDinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FormSach.resx">
-      <DependentUpon>FormSach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FormThuTien.resx">
-      <DependentUpon>FormThuTien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="hanh\frmBanSach.resx">
       <DependentUpon>frmBanSach.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="QLNhaSach.dbml.layout">
+      <DependentUpon>QLNhaSach.dbml</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -161,13 +110,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="QLNS.dbml">
+    <None Include="QLNhaSach.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>QLNS.designer.cs</LastGenOutput>
+      <LastGenOutput>QLNhaSach.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </None>
-    <None Include="QLNS.dbml.layout">
-      <DependentUpon>QLNS.dbml</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

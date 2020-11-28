@@ -32,14 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvBaoCaoNo = new System.Windows.Forms.DataGridView();
+            this.btnXuat = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NoDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhatSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NoCuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnXuat = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCaoNo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,36 +84,6 @@
             this.dgvBaoCaoNo.Size = new System.Drawing.Size(1355, 293);
             this.dgvBaoCaoNo.TabIndex = 3;
             // 
-            // MaKH
-            // 
-            this.MaKH.HeaderText = "Mã KH";
-            this.MaKH.Name = "MaKH";
-            // 
-            // TenKH
-            // 
-            this.TenKH.HeaderText = "Tên KH";
-            this.TenKH.Name = "TenKH";
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            // 
-            // NoDau
-            // 
-            this.NoDau.HeaderText = "Nợ Đầu";
-            this.NoDau.Name = "NoDau";
-            // 
-            // PhatSinh
-            // 
-            this.PhatSinh.HeaderText = "Phát Sinh";
-            this.PhatSinh.Name = "PhatSinh";
-            // 
-            // NoCuoi
-            // 
-            this.NoCuoi.HeaderText = "Nợ Công ";
-            this.NoCuoi.Name = "NoCuoi";
-            // 
             // btnXuat
             // 
             this.btnXuat.Location = new System.Drawing.Point(890, 626);
@@ -132,6 +102,42 @@
             this.btnThoat.Text = "THOÁT";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKh";
+            this.MaKH.HeaderText = "Mã KH";
+            this.MaKH.Name = "MaKH";
+            // 
+            // TenKH
+            // 
+            this.TenKH.DataPropertyName = "TenKH";
+            this.TenKH.HeaderText = "Tên KH";
+            this.TenKH.Name = "TenKH";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            // 
+            // NoDau
+            // 
+            this.NoDau.DataPropertyName = "NoDau";
+            this.NoDau.HeaderText = "Nợ Đầu";
+            this.NoDau.Name = "NoDau";
+            // 
+            // PhatSinh
+            // 
+            this.PhatSinh.DataPropertyName = "PhatSinh";
+            this.PhatSinh.HeaderText = "Phát Sinh";
+            this.PhatSinh.Name = "PhatSinh";
+            // 
+            // NoCuoi
+            // 
+            this.NoCuoi.DataPropertyName = "NoCuoi";
+            this.NoCuoi.HeaderText = "Nợ Công ";
+            this.NoCuoi.Name = "NoCuoi";
+            // 
             // frmBaoCao2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -145,6 +151,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmBaoCao2";
             this.Text = "frmBaoCao2";
+            this.Load += new System.EventHandler(this.frmBaoCao2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCaoNo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,13 +164,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvBaoCaoNo;
+        private System.Windows.Forms.Button btnXuat;
+        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn NoDau;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhatSinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn NoCuoi;
-        private System.Windows.Forms.Button btnXuat;
-        private System.Windows.Forms.Button btnThoat;
     }
 }
