@@ -124,6 +124,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(85, 25);
             this.btnSua.TabIndex = 8;
+            this.btnSua.Tag = "1";
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -136,6 +137,7 @@
             this.btnLuu.TabIndex = 9;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label12
             // 

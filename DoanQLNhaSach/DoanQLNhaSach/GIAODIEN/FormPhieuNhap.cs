@@ -95,8 +95,30 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            sua();
-            loadData();
+          
+            if (btnSua.Tag.ToString().Equals("1"))
+            {
+                txtMaPN.Enabled = false;
+                btnThem.Enabled = false;
+
+                btnXoa.Enabled = false;
+                btnLuu.Enabled = true;
+                btnSua.Tag = "2";
+                btnSua.Text = "Hủy Sửa";
+
+            }
+            else
+            {
+                txtMaPN.Enabled = true;
+                btnThem.Enabled = true;
+
+                btnXoa.Enabled = true;
+                btnLuu.Enabled = false;
+
+                btnSua.Tag = "1";
+                btnSua.Text = "Sửa";
+            }
+         
         }
         public void sua()
         {
@@ -122,6 +144,20 @@ namespace DoanQLNhaSach.GIAODIEN
 
             dtpNgaynhap.Value = sv.NGAYNHAP;
             txtTongTien.Text = sv.TONGTIEN;
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            sua();
+            loadData();
+            txtMaPN.Enabled = true;
+            btnThem.Enabled = true;
+
+            btnXoa.Enabled = true;
+            btnLuu.Enabled = false;
+
+            btnSua.Tag = "1";
+            btnSua.Text = "Sửa";
         }
     }
 }

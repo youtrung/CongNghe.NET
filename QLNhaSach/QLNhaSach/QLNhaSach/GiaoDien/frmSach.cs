@@ -98,9 +98,10 @@ namespace QLNhaSach
             
             cbTimTheLoai.DataSource = TimSachDAO.GetDSSach();
             cbTimTheLoai.DisplayMember = "TheLoai";
-           // cbTimTheLoai.ValueMember = "MaSach";
             cbTimTheLoai.SelectedIndex = 0;
-           
+            // cbTimTheLoai.ValueMember = "MaSach";
+
+
             LoadDSSach();
         }
 

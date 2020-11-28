@@ -29,7 +29,14 @@ namespace DoanQLNhaSach.GIAODIEN
         }
         private void FormSach_Load(object sender, EventArgs e)
         {
+            
+            cbTimTheLoai.DisplayMember = "TheLoai";
+            cbTimTheLoai.DataSource = db.Saches;
+
+
+            cbTimTheLoai.SelectedIndex = 0;
             loadSach();
+
             btnLuu.Enabled = false;
         }
 
@@ -72,6 +79,72 @@ namespace DoanQLNhaSach.GIAODIEN
                        };
             dataSach.DataSource = data;
         }
+        public void loadSachTheoTheloai(string t)
+        {
+            var data = from k in db.Saches
+                       where k.TheLoai.Contains(t)
+                       select new
+                       {
+                           MaSach = k.MaSach,
+                           TenSach = k.TenSach,
+                           TheLoai = k.TheLoai,
+                           TacGia = k.TacGia,
+                           DonGia = k.DonGia,
+                           LuongTon = k.TonCuoi,
+                       };
+            if (data != null)
+            {
+                dataSach.DataSource = data;
+            }
+            else
+                return;
+         
+          
+        }
+        public void loadSachTheoTenSach(string t)
+        {
+            var data = from k in db.Saches
+                       where k.TenSach.Contains(t)
+                       select new
+                       {
+                           MaSach = k.MaSach,
+                           TenSach = k.TenSach,
+                           TheLoai = k.TheLoai,
+                           TacGia = k.TacGia,
+                           DonGia = k.DonGia,
+                           LuongTon = k.TonCuoi,
+                       };
+            if (data != null)
+            {
+                dataSach.DataSource = data;
+            }
+            else
+                return;
+
+
+        }
+        public void loadSachTheoTenTG(string t)
+        {
+            var data = from k in db.Saches
+                       where k.TacGia.Contains(t)
+                       select new
+                       {
+                           MaSach = k.MaSach,
+                           TenSach = k.TenSach,
+                           TheLoai = k.TheLoai,
+                           TacGia = k.TacGia,
+                           DonGia = k.DonGia,
+                           LuongTon = k.TonCuoi,
+                       };
+            if (data != null)
+            {
+                dataSach.DataSource = data;
+            }
+            else
+                return;
+
+
+        }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
@@ -79,6 +152,13 @@ namespace DoanQLNhaSach.GIAODIEN
             {
                 InsertSach();
                 loadSach();
+                btnThem.Tag = "1";
+                btnSua.Enabled = true;
+
+                btnXoa.Enabled = true;
+                btnLuu.Enabled = false;
+                btnThem.Text = "Thêm";
+                flag = -1;
 
             }
             else if (flag == 1)
@@ -87,6 +167,13 @@ namespace DoanQLNhaSach.GIAODIEN
                 MessageBox.Show("Editted", "Thông báo");
                 loadSach();
                 txtMaSach.Enabled = true;
+                btnThem.Enabled = true;
+
+                btnXoa.Enabled = true;
+                btnLuu.Enabled = false;
+                flag = -1;
+                btnSua.Tag = "1";
+                btnSua.Text = "Sửa";
             }
         }
         public void EditSach()
@@ -121,6 +208,7 @@ namespace DoanQLNhaSach.GIAODIEN
                 kt.TheLoai = theloai;
                 kt.TacGia = tacgia;
                 kt.DonGia = dongia;
+                kt.TonCuoi = Int32.Parse(txtLuongton.Text);
             }
             else
                 MessageBox.Show("Không tồn tại mã sách này ");
@@ -152,6 +240,7 @@ namespace DoanQLNhaSach.GIAODIEN
             string theloai = txtTheLoai.Text;
             string tacgia = txtTacGia.Text;
             int dongia = Int32.Parse(txtDonGia.Text);
+            txtLuongton.Text = "0";
             var kt = db.Saches.Where(t => t.MaSach == masach).SingleOrDefault();
             if (kt!=null)
             {
@@ -166,6 +255,7 @@ namespace DoanQLNhaSach.GIAODIEN
                 s.TheLoai = theloai;
                 s.TacGia = tacgia;
                 s.DonGia = dongia;
+                s.TonCuoi = Int32.Parse(txtLuongton.Text);
                 s.TonDau = "0";
                 s.TongBan = "0";
                 s.TongNhap = "0";
@@ -219,9 +309,22 @@ namespace DoanQLNhaSach.GIAODIEN
                 var kt = db.Saches.Where(t => t.MaSach == masach).SingleOrDefault();
                 db.Saches.DeleteOnSubmit(kt);
                 db.SubmitChanges();
-                MessageBox.Show("Xoá sách thành công!");
                 
+                MessageBox.Show("Xoá sách thành công!");
+                Cleardata();
+                loadSach();
+
             }
+        }
+        public void Cleardata()
+        {
+            txtDonGia.Clear();
+            txtLuongton.Clear();
+            txtMaSach.Clear();
+            txtTacGia.Clear();
+            txtTenSach.Clear();
+            txtTheLoai.Clear();
+            
         }
 
         private void dataSach_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -238,6 +341,71 @@ namespace DoanQLNhaSach.GIAODIEN
 
 
 
+        }
+
+        private void cbTimTheLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string theloai = cbTimTheLoai.Text.ToString();
+            loadSachTheoTheloai(theloai);
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            loadSach();
+            radTacGia.Checked = false;
+            radTenSach.Checked = false;
+            radTacGia.Checked = false;
+        }
+
+        private void radTatCa_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radTatCa.Checked == true)
+                loadSach();
+          
+        }
+
+        private void radTenSach_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            if (radTenSach.Checked == true)
+            {
+                string tenSach = txtTimKiem.Text;
+                loadSachTheoTenSach(tenSach);
+              
+            }
+        }
+
+        private void radTacGia_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            if (radTacGia.Checked == true)
+            {
+                string tenSach = txtTimKiem.Text;
+                loadSachTheoTenTG(tenSach);
+               
+            }
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            if (radTenSach.Checked==true)
+            {
+                string tenSach = txtTimKiem.Text;
+                loadSachTheoTenSach(tenSach);
+            }
+            if (radTacGia.Checked == true)
+            {
+                string TacGia = txtTimKiem.Text;
+
+                loadSachTheoTenTG(TacGia);
+            }
+
+
+
+           
+           
+           
+              
         }
     }
 }

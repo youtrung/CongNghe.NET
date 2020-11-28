@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThuTien));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbbMakh = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgaythu = new System.Windows.Forms.DateTimePicker();
             this.btnLuu = new System.Windows.Forms.Button();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTienThu = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cbbMakh);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtpNgaythu);
             this.groupBox1.Controls.Add(this.btnLuu);
             this.groupBox1.Controls.Add(this.txtSDT);
             this.groupBox1.Controls.Add(this.txtTienThu);
@@ -105,15 +105,16 @@
             this.cbbMakh.Name = "cbbMakh";
             this.cbbMakh.Size = new System.Drawing.Size(165, 28);
             this.cbbMakh.TabIndex = 56;
+            this.cbbMakh.SelectedIndexChanged += new System.EventHandler(this.cbbMakh_SelectedIndexChanged);
             // 
-            // dateTimePicker1
+            // dtpNgaythu
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(431, 34);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(173, 26);
-            this.dateTimePicker1.TabIndex = 55;
+            this.dtpNgaythu.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgaythu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaythu.Location = new System.Drawing.Point(431, 34);
+            this.dtpNgaythu.Name = "dtpNgaythu";
+            this.dtpNgaythu.Size = new System.Drawing.Size(173, 26);
+            this.dtpNgaythu.TabIndex = 55;
             // 
             // btnLuu
             // 
@@ -154,6 +155,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(94, 36);
             this.btnSua.TabIndex = 30;
+            this.btnSua.Tag = "1";
             this.btnSua.Text = "  SỬA";
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -169,6 +171,7 @@
             this.btnXoa.TabIndex = 29;
             this.btnXoa.Text = "  XÓA";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // txtTenKH
             // 
@@ -187,8 +190,10 @@
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(94, 37);
             this.btnThem.TabIndex = 28;
+            this.btnThem.Tag = "1";
             this.btnThem.Text = "  THÊM";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtMaThu
             // 
@@ -330,6 +335,7 @@
             this.dgvDSHD.Name = "dgvDSHD";
             this.dgvDSHD.Size = new System.Drawing.Size(793, 185);
             this.dgvDSHD.TabIndex = 37;
+            this.dgvDSHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSHD_CellClick);
             // 
             // MaPhieu
             // 
@@ -398,6 +404,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormThuTien";
             this.Text = "FormThuTien";
+            this.Load += new System.EventHandler(this.FormThuTien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSHD)).EndInit();
@@ -430,7 +437,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbbMakh;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpNgaythu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDSHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPhieu;
