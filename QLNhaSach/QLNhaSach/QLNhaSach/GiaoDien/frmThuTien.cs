@@ -244,5 +244,10 @@ namespace QLNhaSach
             printPreviewDialog1.Document = printDocument1;
             printPreviewDialog1.ShowDialog();
         }
+
+        private void dgvDSHD_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

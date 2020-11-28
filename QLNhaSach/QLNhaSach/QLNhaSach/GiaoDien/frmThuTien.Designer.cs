@@ -396,6 +396,7 @@
             this.dgvDSHD.Size = new System.Drawing.Size(671, 157);
             this.dgvDSHD.TabIndex = 36;
             this.dgvDSHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSHD_CellClick);
+            this.dgvDSHD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSHD_CellContentClick);
             // 
             // STT
             // 
