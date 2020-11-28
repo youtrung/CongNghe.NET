@@ -52,8 +52,6 @@ namespace QLNhaSach
                 else
                 {
                     MessageBox.Show("Bạn đã nhập sai tên tài khoản hoặc mật khẩu!", "Cảnh Báo");
-
-
                 }
 
             }
@@ -147,6 +145,11 @@ namespace QLNhaSach
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbbQuyen_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

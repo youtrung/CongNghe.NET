@@ -34,11 +34,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+<<<<<<< HEAD
  <<<<< HEAD
-    <Reference Include="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
 =======
+>>>>>>> 8862b469ab471492bde9e73abede639a45296b58
+    <Reference Include="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="System.Data.Linq" />
->>>>>>> 4251bb16fa099a908a1f8b4033e585a366ea1862
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,60 +50,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
  <<<<< HEAD
     <Compile Include="GIAODIEN\FrmChuongtrinh.cs">
+=======
+    <Compile Include="GIAODIEN\FormLogin.cs">
+>>>>>>> 8862b469ab471492bde9e73abede639a45296b58
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GIAODIEN\FrmChuongtrinh.Designer.cs">
-      <DependentUpon>FrmChuongtrinh.cs</DependentUpon>
+    <Compile Include="GIAODIEN\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GIAODIEN\FrmDoiMatKhau.cs">
+    <Compile Include="GIAODIEN\FormNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GIAODIEN\FrmDoiMatKhau.Designer.cs">
-      <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
+    <Compile Include="GIAODIEN\FormNhanVien.Designer.cs">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="GIAODIEN\FrmHoaDon.cs">
+    <Compile Include="GIAODIEN\FormPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GIAODIEN\FrmHoaDon.Designer.cs">
-      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    <Compile Include="GIAODIEN\FormPhieuNhap.Designer.cs">
+      <DependentUpon>FormPhieuNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="GIAODIEN\FrmKhachHang.cs">
+    <Compile Include="GIAODIEN\FormQuyDinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GIAODIEN\FrmKhachHang.Designer.cs">
-      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    <Compile Include="GIAODIEN\FormQuyDinh.Designer.cs">
+      <DependentUpon>FormQuyDinh.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
 =======
  <<<<< HEAD
     <Compile Include="dbMain.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbMain.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmBanSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmBanSach.Designer.cs">
-      <DependentUpon>frmBanSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="dbMain.dbml.layout">
-      <DependentUpon>dbMain.dbml</DependentUpon>
-    </None>
-    <EmbeddedResource Include="frmBanSach.resx">
-      <DependentUpon>frmBanSach.cs</DependentUpon>
-    </EmbeddedResource>
 =======
->>>>>>> 0dad8f681217550a82adc6c6fe08a48c8b7dbe26
+    <Compile Include="GIAODIEN\FormSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormSach.Designer.cs">
+      <DependentUpon>FormSach.cs</DependentUpon>
+>>>>>>> 8862b469ab471492bde9e73abede639a45296b58
+    </Compile>
+    <Compile Include="GIAODIEN\FormThuTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormThuTien.Designer.cs">
+      <DependentUpon>FormThuTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hanh\frmBanSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hanh\frmBanSach.Designer.cs">
+      <DependentUpon>frmBanSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hanh\frmBaoCao1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hanh\frmBaoCao1.Designer.cs">
+      <DependentUpon>frmBaoCao1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hanh\frmBaoCao2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hanh\frmBaoCao2.Designer.cs">
+      <DependentUpon>frmBaoCao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hanh\frmChiTietPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hanh\frmChiTietPhieuNhap.Designer.cs">
+      <DependentUpon>frmChiTietPhieuNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLNS.designer.cs">
@@ -110,22 +131,42 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNS.dbml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
  <<<<< HEAD
     <EmbeddedResource Include="GIAODIEN\FrmChuongtrinh.resx">
       <DependentUpon>FrmChuongtrinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FrmDoiMatKhau.resx">
-      <DependentUpon>FrmDoiMatKhau.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FrmHoaDon.resx">
-      <DependentUpon>FrmHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GIAODIEN\FrmKhachHang.resx">
-      <DependentUpon>FrmKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
 =======
->>>>>>> 4251bb16fa099a908a1f8b4033e585a366ea1862
->>>>>>> 0dad8f681217550a82adc6c6fe08a48c8b7dbe26
+    <EmbeddedResource Include="GIAODIEN\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormNhanVien.resx">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormPhieuNhap.resx">
+      <DependentUpon>FormPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormQuyDinh.resx">
+      <DependentUpon>FormQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormSach.resx">
+      <DependentUpon>FormSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormThuTien.resx">
+      <DependentUpon>FormThuTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanh\frmBanSach.resx">
+      <DependentUpon>frmBanSach.cs</DependentUpon>
+>>>>>>> 8862b469ab471492bde9e73abede639a45296b58
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanh\frmBaoCao1.resx">
+      <DependentUpon>frmBaoCao1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanh\frmBaoCao2.resx">
+      <DependentUpon>frmBaoCao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hanh\frmChiTietPhieuNhap.resx">
+      <DependentUpon>frmChiTietPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -135,11 +176,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="dbMain.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>dbMain.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -164,6 +200,7 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
+<<<<<<< HEAD
 <<<<<< HEAD
   <ItemGroup />
 =======
@@ -174,6 +211,11 @@
   </ItemGroup>
 >>>>>>> 4251bb16fa099a908a1f8b4033e585a366ea1862
 >>>>>>> 0dad8f681217550a82adc6c6fe08a48c8b7dbe26
+=======
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+>>>>>>> 8862b469ab471492bde9e73abede639a45296b58
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

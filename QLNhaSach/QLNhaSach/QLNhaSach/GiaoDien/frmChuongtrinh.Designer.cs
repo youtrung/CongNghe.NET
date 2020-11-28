@@ -86,14 +86,14 @@
             // sÁCHToolStripMenuItem
             // 
             this.sÁCHToolStripMenuItem.Name = "sÁCHToolStripMenuItem";
-            this.sÁCHToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.sÁCHToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.sÁCHToolStripMenuItem.Text = "TRA CỨU SÁCH";
             this.sÁCHToolStripMenuItem.Click += new System.EventHandler(this.sÁCHToolStripMenuItem_Click);
             // 
             // kHÁCHHÀNGToolStripMenuItem
             // 
             this.kHÁCHHÀNGToolStripMenuItem.Name = "kHÁCHHÀNGToolStripMenuItem";
-            this.kHÁCHHÀNGToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.kHÁCHHÀNGToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.kHÁCHHÀNGToolStripMenuItem.Text = "KHÁCH HÀNG";
             this.kHÁCHHÀNGToolStripMenuItem.Click += new System.EventHandler(this.kHÁCHHÀNGToolStripMenuItem_Click);
             // 
@@ -134,20 +134,20 @@
             this.bÁOCÁOTỒNToolStripMenuItem,
             this.bÁOCÁONỢToolStripMenuItem});
             this.tHỐNGKÊBÁOCÁOToolStripMenuItem.Name = "tHỐNGKÊBÁOCÁOToolStripMenuItem";
-            this.tHỐNGKÊBÁOCÁOToolStripMenuItem.Size = new System.Drawing.Size(134, 20);
+            this.tHỐNGKÊBÁOCÁOToolStripMenuItem.Size = new System.Drawing.Size(133, 20);
             this.tHỐNGKÊBÁOCÁOToolStripMenuItem.Text = "THỐNG KÊ-BÁO CÁO";
             // 
             // bÁOCÁOTỒNToolStripMenuItem
             // 
             this.bÁOCÁOTỒNToolStripMenuItem.Name = "bÁOCÁOTỒNToolStripMenuItem";
-            this.bÁOCÁOTỒNToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.bÁOCÁOTỒNToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.bÁOCÁOTỒNToolStripMenuItem.Text = "BÁO CÁO TỒN";
             this.bÁOCÁOTỒNToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁOTỒNToolStripMenuItem_Click);
             // 
             // bÁOCÁONỢToolStripMenuItem
             // 
             this.bÁOCÁONỢToolStripMenuItem.Name = "bÁOCÁONỢToolStripMenuItem";
-            this.bÁOCÁONỢToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.bÁOCÁONỢToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.bÁOCÁONỢToolStripMenuItem.Text = "BÁO CÁO NỢ";
             this.bÁOCÁONỢToolStripMenuItem.Click += new System.EventHandler(this.bÁOCÁONỢToolStripMenuItem_Click);
             // 
@@ -187,21 +187,21 @@
             // đỔIMẬTKHẨUToolStripMenuItem
             // 
             this.đỔIMẬTKHẨUToolStripMenuItem.Name = "đỔIMẬTKHẨUToolStripMenuItem";
-            this.đỔIMẬTKHẨUToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.đỔIMẬTKHẨUToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.đỔIMẬTKHẨUToolStripMenuItem.Text = "ĐỔI MẬT KHẨU";
             this.đỔIMẬTKHẨUToolStripMenuItem.Click += new System.EventHandler(this.đỔIMẬTKHẨUToolStripMenuItem_Click);
             // 
             // đĂNGXUẤTToolStripMenuItem
             // 
             this.đĂNGXUẤTToolStripMenuItem.Name = "đĂNGXUẤTToolStripMenuItem";
-            this.đĂNGXUẤTToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.đĂNGXUẤTToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.đĂNGXUẤTToolStripMenuItem.Text = "ĐĂNG XUẤT";
             this.đĂNGXUẤTToolStripMenuItem.Click += new System.EventHandler(this.đĂNGXUẤTToolStripMenuItem_Click);
             // 
             // tHOÁTToolStripMenuItem
             // 
             this.tHOÁTToolStripMenuItem.Name = "tHOÁTToolStripMenuItem";
-            this.tHOÁTToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.tHOÁTToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.tHOÁTToolStripMenuItem.Text = "THOÁT";
             this.tHOÁTToolStripMenuItem.Click += new System.EventHandler(this.tHOÁTToolStripMenuItem_Click);
             // 
@@ -222,6 +222,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(831, 412);
             this.panel2.TabIndex = 34;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // frmChuongtrinh
             // 

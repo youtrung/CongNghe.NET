@@ -160,7 +160,10 @@ namespace DoanQLNhaSach.GIAODIEN
             }
             else
             {
+<<<<<<< HEAD
                 
+=======
+>>>>>>> 8862b469ab471492bde9e73abede639a45296b58
                 Sach s = new Sach();
                 s.MaSach = masach;
                 s.TenSach = tensach;
@@ -240,6 +243,7 @@ namespace DoanQLNhaSach.GIAODIEN
 
 
         }
+<<<<<<< HEAD
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
@@ -255,5 +259,7 @@ namespace DoanQLNhaSach.GIAODIEN
         {
 
         }
+=======
+>>>>>>> 8862b469ab471492bde9e73abede639a45296b58
     }
 }

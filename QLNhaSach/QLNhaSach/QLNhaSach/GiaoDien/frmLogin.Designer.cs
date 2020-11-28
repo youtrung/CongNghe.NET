@@ -73,6 +73,7 @@
             this.cbbQuyen.Name = "cbbQuyen";
             this.cbbQuyen.Size = new System.Drawing.Size(121, 21);
             this.cbbQuyen.TabIndex = 53;
+            this.cbbQuyen.SelectedIndexChanged += new System.EventHandler(this.cbbQuyen_SelectedIndexChanged);
             // 
             // label1
             // 
