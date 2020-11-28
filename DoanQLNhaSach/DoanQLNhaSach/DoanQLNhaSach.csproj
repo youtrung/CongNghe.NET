@@ -34,7 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-<<<<<<< HEAD
+ <<<<< HEAD
     <Reference Include="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
 =======
     <Reference Include="System.Data.Linq" />
@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+ <<<<< HEAD
     <Compile Include="GIAODIEN\FrmChuongtrinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,7 +75,7 @@
       <DependentUpon>FrmKhachHang.cs</DependentUpon>
     </Compile>
 =======
-<<<<<<< HEAD
+ <<<<< HEAD
     <Compile Include="dbMain.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -110,7 +110,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNS.dbml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
+ <<<<< HEAD
     <EmbeddedResource Include="GIAODIEN\FrmChuongtrinh.resx">
       <DependentUpon>FrmChuongtrinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,10 +164,10 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-<<<<<<< HEAD
+<<<<<< HEAD
   <ItemGroup />
 =======
-<<<<<<< HEAD
+ <<<<< HEAD
 =======
   <ItemGroup>
     <Folder Include="GIAODIEN\" />
