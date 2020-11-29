@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static DoanQLNhaSach.GIAODIEN.FormLogin;
+//using static DoanQLNhaSach.GIAODIEN.FormLogin;
 namespace DoanQLNhaSach.GIAODIEN
 {
     public partial class FormQuyDinh : Form
@@ -20,11 +20,11 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void FormQuyDinh_Load(object sender, EventArgs e)
         {
-            if (kiemtraQuyen == 1)
-            {
-                btnUdp.Enabled = false;
-            }
-            loadqd();
+            //if (kiemtraQuyen == 1)
+            //{
+            //    btnUdp.Enabled = false;
+            //}
+            //loadqd();
         }
         public void loadqd()
         {

@@ -36,7 +36,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dtgvHD = new System.Windows.Forms.DataGridView();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKH1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ngaylap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -121,7 +121,7 @@
             this.dtgvHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaHD,
-            this.MaKH,
+            this.MaKH1,
             this.TenKH,
             this.Ngaylap,
             this.Tongtien});
@@ -129,29 +129,35 @@
             this.dtgvHD.Name = "dtgvHD";
             this.dtgvHD.Size = new System.Drawing.Size(548, 156);
             this.dtgvHD.TabIndex = 0;
+            this.dtgvHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvHD_CellClick);
             // 
             // MaHD
             // 
+            this.MaHD.DataPropertyName = "MaHD";
             this.MaHD.HeaderText = "Mã Hóa Đơn";
             this.MaHD.Name = "MaHD";
             // 
-            // MaKH
+            // MaKH1
             // 
-            this.MaKH.HeaderText = "Mã Khách Hàng";
-            this.MaKH.Name = "MaKH";
+            this.MaKH1.DataPropertyName = "MaKH1";
+            this.MaKH1.HeaderText = "Mã Khách Hàng";
+            this.MaKH1.Name = "MaKH1";
             // 
             // TenKH
             // 
+            this.TenKH.DataPropertyName = "TenKH";
             this.TenKH.HeaderText = "Tên Khách Hàng";
             this.TenKH.Name = "TenKH";
             // 
             // Ngaylap
             // 
+            this.Ngaylap.DataPropertyName = "NgaylapHD";
             this.Ngaylap.HeaderText = "Ngày lập";
             this.Ngaylap.Name = "Ngaylap";
             // 
             // Tongtien
             // 
+            this.Tongtien.DataPropertyName = "Tongtien";
             this.Tongtien.HeaderText = "Tổng tiền";
             this.Tongtien.Name = "Tongtien";
             // 
@@ -192,6 +198,7 @@
             this.btnSua.Tag = "1";
             this.btnSua.Text = "  SỬA";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
@@ -236,12 +243,12 @@
             this.btnXoa.TabIndex = 30;
             this.btnXoa.Text = "  XÓA";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // txtTongtien
             // 
             this.txtTongtien.Location = new System.Drawing.Point(107, 99);
             this.txtTongtien.Name = "txtTongtien";
-            this.txtTongtien.ReadOnly = true;
             this.txtTongtien.Size = new System.Drawing.Size(147, 20);
             this.txtTongtien.TabIndex = 6;
             // 
@@ -259,7 +266,6 @@
             // 
             this.txtTenKH.Location = new System.Drawing.Point(375, 25);
             this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.ReadOnly = true;
             this.txtTenKH.Size = new System.Drawing.Size(147, 20);
             this.txtTenKH.TabIndex = 4;
             this.txtTenKH.TextChanged += new System.EventHandler(this.txtTenKH_TextChanged);
@@ -276,7 +282,7 @@
             // 
             // dtpngaylaphoadon
             // 
-            this.dtpngaylaphoadon.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpngaylaphoadon.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpngaylaphoadon.Location = new System.Drawing.Point(375, 58);
             this.dtpngaylaphoadon.Name = "dtpngaylaphoadon";
             this.dtpngaylaphoadon.Size = new System.Drawing.Size(147, 20);
@@ -286,7 +292,6 @@
             // 
             this.txtMaHD.Location = new System.Drawing.Point(107, 19);
             this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.ReadOnly = true;
             this.txtMaHD.Size = new System.Drawing.Size(147, 20);
             this.txtMaHD.TabIndex = 1;
             // 
@@ -294,7 +299,6 @@
             // 
             this.txtMaKH1.Location = new System.Drawing.Point(107, 61);
             this.txtMaKH1.Name = "txtMaKH1";
-            this.txtMaKH1.ReadOnly = true;
             this.txtMaKH1.Size = new System.Drawing.Size(147, 20);
             this.txtMaKH1.TabIndex = 1;
             // 
@@ -371,11 +375,6 @@
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dtgvHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ngaylap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tongtien;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnLuu;
@@ -392,5 +391,10 @@
         private System.Windows.Forms.Label lakh;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ngaylap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tongtien;
     }
 }

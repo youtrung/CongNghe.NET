@@ -29,16 +29,15 @@ namespace DoanQLNhaSach.GIAODIEN
         }
         public void loadKhachHang()
         {
-            DoanQLNhaSach.QLNSDataContext db = new DoanQLNhaSach.QLNSDataContext();
             var data = from k in db.KhachHangs
                        select new
                        {
-                           MaKh = k.MaKh,
+                           MaKH = k.MaKh,
                            TenKH = k.HoTen,
                            DiaChi = k.DiaChi,
                            Email = k.Email,
                            SoDienThoai = k.SDT,
-                           Tongno = k.TongNo,
+                           TongNo = k.TongNo,
                        };
             dtgvKH.DataSource = data;
         }
@@ -75,7 +74,6 @@ namespace DoanQLNhaSach.GIAODIEN
                 btnXoa.Enabled = false;
                 btnLuu.Enabled = true;
                 btnThem.Tag = "2";
-                txtMaKH = null;
                 btnThem.Text = "Hủy Thêm ";
                 flag = 0;
             }
@@ -97,21 +95,21 @@ namespace DoanQLNhaSach.GIAODIEN
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                 return;
             }
-            string MaKh = txtMaKH.Text;
+            string MaKH = txtMaKH.Text;
             string TenKH = txtTenKH.Text;
             string Email = txtEmail.Text;
-            string Diachi = txtDiaChi.Text;
-            string SDT = txtDienthoai.Text;
-            string Tongno = txtTongno.Text;
-            var kt = db.KhachHangs.Where(t => t.MaKh == MaKh).SingleOrDefault();
+            string DiaChi = txtDiaChi.Text;
+            string SoDienThoai = txtDienthoai.Text;
+            string TongNo = txtTongno.Text;
+            var kt = db.KhachHangs.Where(t => t.MaKh == MaKH).SingleOrDefault();
             if (kt != null)
             {
-                kt.MaKh = MaKh;
+                kt.MaKh = MaKH;
                 kt.HoTen = TenKH;
                 kt.Email = Email;
-                kt.DiaChi = Diachi;
-                kt.SDT = SDT;
-                kt.TongNo = Tongno;
+                kt.DiaChi = DiaChi;
+                kt.SDT = SoDienThoai;
+                kt.TongNo = TongNo;
             }
             else
                 MessageBox.Show("Không tồn tại mã khách hàng này ");
@@ -120,19 +118,18 @@ namespace DoanQLNhaSach.GIAODIEN
         }
         public void InsertKhachHang()
         {
-            DoanQLNhaSach.QLNSDataContext db = new DoanQLNhaSach.QLNSDataContext();
             if (txtMaKH.Text == "" || txtTenKH.Text == "" || txtEmail.Text == "" || txtDiaChi.Text == "" || txtDienthoai.Text == "" || txtTongno.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                 return;
             }
-            string MaKh = txtMaKH.Text;
+            string MaKH = txtMaKH.Text;
             string TenKH = txtTenKH.Text;
             string Email = txtEmail.Text;
-            string Diachi = txtDiaChi.Text;
-            string SDT = txtDienthoai.Text;
-            string Tongno = txtTongno.Text;
-            var kt = db.KhachHangs.Where(t => t.MaKh == MaKh).SingleOrDefault();
+            string DiaChi = txtDiaChi.Text;
+            string SoDienThoai = txtDienthoai.Text;
+            string TongNo = txtTongno.Text;
+            var kt = db.KhachHangs.Where(t => t.MaKh == MaKH).SingleOrDefault();
             if (kt != null)
             {
                 MessageBox.Show("Mã khách hàng không được trùng");
@@ -141,12 +138,12 @@ namespace DoanQLNhaSach.GIAODIEN
             else
             {
                 KhachHang kh = new KhachHang();
-                kh.MaKh = MaKh;
+                kh.MaKh = MaKH;
                 kh.HoTen = TenKH;
                 kh.Email = Email;
-                kh.DiaChi = Diachi;
-                kh.SDT = SDT;
-                kh.TongNo = Tongno;
+                kh.DiaChi = DiaChi;
+                kh.SDT = SoDienThoai;
+                kh.TongNo = TongNo;
 
                 db.KhachHangs.InsertOnSubmit(kh);
                 db.SubmitChanges();
@@ -171,7 +168,6 @@ namespace DoanQLNhaSach.GIAODIEN
             {
                 txtMaKH.Enabled = true;
                 btnThem.Enabled = true;
-
                 btnXoa.Enabled = true;
                 btnLuu.Enabled = false;
                 flag = -1;
@@ -201,12 +197,17 @@ namespace DoanQLNhaSach.GIAODIEN
         private void dtgvKH_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             dynamic dy = dtgvKH.CurrentRow.DataBoundItem;
-            dy.MaKh = txtMaKH.Text;
-            dy.TenKH = txtTenKH.Text;
-            dy.Email = txtEmail.Text;
-            dy.Diachi = txtDiaChi.Text;
-            dy.SDT = txtDienthoai.Text;
-            dy.Tongno = txtTongno.Text;
+            txtMaKH.Text=dy.MaKH;
+            txtTenKH.Text = dy.TenKH ;
+            txtEmail.Text = dy.Email;
+            txtDiaChi.Text = dy.DiaChi;
+            txtDienthoai.Text = dy.SoDienThoai;
+            txtTongno.Text = dy.TongNo;
+        }
+
+        private void dtgvKH_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

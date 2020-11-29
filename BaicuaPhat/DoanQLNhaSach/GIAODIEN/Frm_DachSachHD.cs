@@ -39,11 +39,8 @@ namespace DoanQLNhaSach.GIAODIEN
             if (btnThem.Tag.ToString().Equals("1"))
             {
                 btnSua.Enabled = false;
-
                 btnXoa.Enabled = false;
                 btnLuu.Enabled = true;
-                txtTongtien.Text = "0";
-                txtMaHD.Text = null; 
                 btnThem.Tag = "2";
                 btnThem.Text = "Hủy Thêm ";
                 flag = 0;
@@ -52,7 +49,6 @@ namespace DoanQLNhaSach.GIAODIEN
             {
                 btnThem.Tag = "1";
                 btnSua.Enabled = true;
-
                 btnXoa.Enabled = true;
                 btnLuu.Enabled = false;
                 btnThem.Text = "Thêm";
@@ -68,7 +64,7 @@ namespace DoanQLNhaSach.GIAODIEN
                            MaKH1 = k.MaKH,
                            TenKH = k.TenKH,
                            NgaylapHD = k.Ngaylap,
-                           TongTien = k.TongTien,
+                           Tongtien = k.TongTien,
                        };
             dtgvHD.DataSource = data;
         }
@@ -127,6 +123,7 @@ namespace DoanQLNhaSach.GIAODIEN
         {
 
         }
+
         public void InsertHoaDon()
         {
             if (IsNumber(txtTongtien.Text) == false)
@@ -140,7 +137,7 @@ namespace DoanQLNhaSach.GIAODIEN
                 return;
             }
             string mahd = txtMaHD.Text;
-            string makh1 = txtMaKH.Text;
+            string makh1 = txtMaKH1.Text;
             string tenkh = txtTenKH.Text;
             DateTime ngaylaphoadon = dtpngaylaphoadon.Value.Date;
             int tongtien = Int32.Parse(txtTongtien.Text);
@@ -155,7 +152,7 @@ namespace DoanQLNhaSach.GIAODIEN
 
                 HoaDon hd = new HoaDon();
                 hd.MaHD = mahd;
-                hd.MaHD = makh1;
+                hd.MaKH = makh1;
                 hd.TenKH = tenkh;
                 hd.Ngaylap = ngaylaphoadon;
                 hd.TongTien = tongtien;
@@ -166,6 +163,61 @@ namespace DoanQLNhaSach.GIAODIEN
             }
             MessageBox.Show("Thêm hóa đơn thành công!");
 
+        }
+
+        private void dtgvHD_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dynamic dy = dtgvHD.CurrentRow.DataBoundItem;
+            txtMaHD.Text = dy.MaHD;
+            txtTenKH.Text = dy.TenKH;
+            txtMaKH1.Text= dy.MaKH1;
+            dtpngaylaphoadon.Value= dy.NgaylapHD;
+            txtTongtien.Text = dy.Tongtien.ToString();
+           
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn xoá hoá đơn này?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                if (txtMaHD.Text == "")
+                {
+                    MessageBox.Show("Không được để trống Mã hóa đơn này ");
+                    return;
+                }
+                string MaHD = txtMaHD.Text;
+                var kt = db.HoaDons.Where(t => t.MaHD == MaHD).SingleOrDefault();
+                db.HoaDons.DeleteOnSubmit(kt);
+                db.SubmitChanges();
+                MessageBox.Show("Xoá khách hàng thành công!");
+
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (btnSua.Tag.ToString().Equals("1"))
+            {
+                txtMaHD.Enabled = false;
+                btnThem.Enabled = false;
+
+                btnXoa.Enabled = false;
+                btnLuu.Enabled = true;
+                btnSua.Tag = "2";
+                btnSua.Text = "Hủy Sửa";
+                flag = 1;
+            }
+            else
+            {
+                txtMaHD.Enabled = true;
+                btnThem.Enabled = true;
+
+                btnXoa.Enabled = true;
+                btnLuu.Enabled = false;
+                flag = -1;
+                btnSua.Tag = "1";
+                btnSua.Text = "Sửa";
+            }
         }
 
     }
