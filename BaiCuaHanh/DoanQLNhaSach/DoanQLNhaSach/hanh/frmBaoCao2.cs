@@ -16,5 +16,33 @@ namespace DoanQLNhaSach.hanh
         {
             InitializeComponent();
         }
+
+        private void frmBaoCao2_Load(object sender, EventArgs e)
+        {
+            loadDuLieu();
+        }
+        private void loadDuLieu()
+        {
+            using (QLNhaSachDataContext db = new QLNhaSachDataContext())
+            {
+
+                var dataLinQ = from nxb in db.KhachHangs
+
+                               //select nxb;
+                               select new
+                               {
+
+                                   MaKh = nxb.MaKh,
+                                   TenKH = nxb.HoTen,
+                                   Email = nxb.Email,
+                                   NoDau = nxb.NoDau,
+                                    
+                                   PhatSinh = nxb.PhatSinh,
+                                   
+
+                               };
+                dgvBaoCaoNo.DataSource = dataLinQ;
+            }
+        }
     }
 }

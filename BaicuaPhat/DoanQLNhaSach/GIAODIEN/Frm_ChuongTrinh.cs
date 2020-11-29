@@ -87,7 +87,7 @@ namespace DoanQLNhaSach.GIAODIEN
         private void Frm_ChuongTrinh_Load(object sender, EventArgs e)
         {
             FormLogin frmLG = new FormLogin();
-
+            
             //int flag = kiemtraQuyen.flag;
             //if (flag == 1)
             //{

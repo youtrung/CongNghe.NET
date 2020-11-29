@@ -104,6 +104,7 @@
             this.btnTim.Text = "Tìm kiếm";
             this.btnTim.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTenKhachHang
             // 

@@ -53,6 +53,7 @@
             this.label5.Size = new System.Drawing.Size(175, 25);
             this.label5.TabIndex = 69;
             this.label5.Text = "ĐỔI MẬT KHẨU";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 

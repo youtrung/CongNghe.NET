@@ -255,5 +255,10 @@ namespace DoanQLNhaSach.GIAODIEN
         {
 
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

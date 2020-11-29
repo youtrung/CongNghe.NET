@@ -16,5 +16,29 @@ namespace DoanQLNhaSach.hanh
         {
             InitializeComponent();
         }
+
+        private void frmBanSach_Load(object sender, EventArgs e)
+        {
+            loadDuLieu();
+        }
+        private void loadDuLieu()
+        {
+            using (QLNhaSachDataContext db = new QLNhaSachDataContext())
+            {
+                
+                var dataLinQ = from nxb in db.Saches
+                
+                               //select nxb;
+                               select new
+                               {
+                                   
+                                   MaSach = nxb.MaSach,
+                                   TenSach = nxb.TenSach,
+                                   DonGia = nxb.DonGia,
+                                   
+                               };
+                dgvDSHD.DataSource = dataLinQ;
+            }
+        }
     }
 }
