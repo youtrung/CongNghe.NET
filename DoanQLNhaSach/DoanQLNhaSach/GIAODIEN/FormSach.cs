@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static DoanQLNhaSach.GIAODIEN.Form_ChiTietPhieuNhapSach;
 
 namespace DoanQLNhaSach.GIAODIEN
 {
@@ -408,8 +409,14 @@ namespace DoanQLNhaSach.GIAODIEN
               
         }
 
-
-        
-
+        private void btnChon_Click(object sender, EventArgs e)
+        {
+            if(txtMaSach.Text=="")
+            {
+                MessageBox.Show("Vui Lòng Chọn Sách Trong bảng ");
+            }
+            getMS = txtMaSach.Text;
+            this.Close();
+        }
     }
 }

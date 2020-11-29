@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GIAODIEN\FormChuongTrinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormChuongTrinh.Designer.cs">
+      <DependentUpon>FormChuongTrinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIAODIEN\FormHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormHoaDon.Designer.cs">
+      <DependentUpon>FormHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GIAODIEN\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,29 +94,11 @@
     <Compile Include="GIAODIEN\FormThuTien.Designer.cs">
       <DependentUpon>FormThuTien.cs</DependentUpon>
     </Compile>
-    <Compile Include="hanh\frmBanSach.cs">
+    <Compile Include="GIAODIEN\Form_ChiTietPhieuNhapSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hanh\frmBanSach.Designer.cs">
-      <DependentUpon>frmBanSach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="hanh\frmBaoCao1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hanh\frmBaoCao1.Designer.cs">
-      <DependentUpon>frmBaoCao1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="hanh\frmBaoCao2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hanh\frmBaoCao2.Designer.cs">
-      <DependentUpon>frmBaoCao2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="hanh\frmChiTietPhieuNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hanh\frmChiTietPhieuNhap.Designer.cs">
-      <DependentUpon>frmChiTietPhieuNhap.cs</DependentUpon>
+    <Compile Include="GIAODIEN\Form_ChiTietPhieuNhapSach.Designer.cs">
+      <DependentUpon>Form_ChiTietPhieuNhapSach.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +107,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNS.dbml</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GIAODIEN\FormChuongTrinh.resx">
+      <DependentUpon>FormChuongTrinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormHoaDon.resx">
+      <DependentUpon>FormHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GIAODIEN\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,8 +132,8 @@
     <EmbeddedResource Include="GIAODIEN\FormThuTien.resx">
       <DependentUpon>FormThuTien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hanh\frmBanSach.resx">
-      <DependentUpon>frmBanSach.cs</DependentUpon>
+    <EmbeddedResource Include="GIAODIEN\Form_ChiTietPhieuNhapSach.resx">
+      <DependentUpon>Form_ChiTietPhieuNhapSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

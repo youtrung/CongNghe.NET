@@ -167,7 +167,6 @@ namespace QLNhaSach
         {
             int index = dgvKetQua.CurrentRow.Index;
             GetMaSach.getMaSach = dgvKetQua.Rows[index].Cells[1].Value.ToString();
-
             this.Close();
         }
 

@@ -35,7 +35,7 @@ namespace DoanQLNhaSach.GIAODIEN
                     }
                     getTK = txtTaikhoan.Text;
                     this.Hide();
-                    FormQuyDinh frm = new FormQuyDinh();
+                    FormChuongTrinh frm = new FormChuongTrinh();
                     frm.ShowDialog();
                     this.Close();
                 }
@@ -50,7 +50,7 @@ namespace DoanQLNhaSach.GIAODIEN
                     }
                     getTK = txtTaikhoan.Text;
                     this.Hide();
-                   FormQuyDinh frm = new FormQuyDinh();
+                    FormChuongTrinh frm = new FormChuongTrinh();
                     frm.ShowDialog();
                     this.Close();
                    

@@ -44,6 +44,7 @@
             this.Ngaynhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TONGTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnBoSung = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataPN)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,7 +101,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(87, 242);
+            this.btnThem.Location = new System.Drawing.Point(60, 317);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(85, 25);
             this.btnThem.TabIndex = 6;
@@ -110,7 +111,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(202, 242);
+            this.btnXoa.Location = new System.Drawing.Point(202, 317);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(85, 25);
             this.btnXoa.TabIndex = 7;
@@ -120,7 +121,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(202, 292);
+            this.btnSua.Location = new System.Drawing.Point(202, 364);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(85, 25);
             this.btnSua.TabIndex = 8;
@@ -131,7 +132,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(87, 292);
+            this.btnLuu.Location = new System.Drawing.Point(60, 364);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(85, 25);
             this.btnLuu.TabIndex = 9;
@@ -193,11 +194,23 @@
             this.label4.TabIndex = 43;
             this.label4.Text = "PHIẾU NHẬP SÁCH";
             // 
+            // btnBoSung
+            // 
+            this.btnBoSung.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnBoSung.Location = new System.Drawing.Point(182, 215);
+            this.btnBoSung.Name = "btnBoSung";
+            this.btnBoSung.Size = new System.Drawing.Size(105, 59);
+            this.btnBoSung.TabIndex = 44;
+            this.btnBoSung.Text = "Xem Và Bổ Sung Chi Tiết Phiếu Nhập";
+            this.btnBoSung.UseVisualStyleBackColor = true;
+            this.btnBoSung.Click += new System.EventHandler(this.btnBoSung_Click);
+            // 
             // FormPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBoSung);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataPN);
             this.Controls.Add(this.label12);
@@ -238,5 +251,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngaynhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn TONGTIEN;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnBoSung;
     }
 }

@@ -17,15 +17,14 @@ namespace DoanQLNhaSach.GIAODIEN
         {
             InitializeComponent();
         }
-
+        public static string getMaPN;
         private void FormPhieuNhap_Load(object sender, EventArgs e)
         {
             loadData();
         }
-        public void loadData()
+  
+        public  void loadData()
         {
-
-
             var data = from k in db.PhieuNhaps 
                       // join t in db.ChiTietPhieuNhaps on k.MaPhieuNhap equals t.MaPhieuNhap
                        //into ps from t in ps.DefaultIfEmpty()
@@ -72,7 +71,13 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            
             var kt = db.PhieuNhaps.Where(t => t.MaPhieuNhap == txtMaPN.Text).SingleOrDefault();
+            if (kt==null)
+            {
+                MessageBox.Show("Hãy điền mã phiếu nhập hợp lệ ");
+                return;
+            }
             if (txtTongTien.Text == "0")
             {
                 if (MessageBox.Show("Bạn có chắc muốn xoá phiếu nhập này?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
@@ -158,6 +163,22 @@ namespace DoanQLNhaSach.GIAODIEN
 
             btnSua.Tag = "1";
             btnSua.Text = "Sửa";
+        }
+
+        private void btnBoSung_Click(object sender, EventArgs e)
+        {
+            var kt = db.PhieuNhaps.Where(t => t.MaPhieuNhap == txtMaPN.Text).SingleOrDefault();
+            if (kt==null)
+            {
+                MessageBox.Show("Xin hãy chọn mã phiếu nhập cần bs");
+                return;
+            }
+            getMaPN = txtMaPN.Text;
+            this.Hide();
+            Form_ChiTietPhieuNhapSach frm = new Form_ChiTietPhieuNhapSach();
+            frm.ShowDialog();
+          
+
         }
     }
 }

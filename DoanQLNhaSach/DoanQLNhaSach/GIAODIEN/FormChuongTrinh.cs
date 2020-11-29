@@ -7,25 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace DoanQLNhaSach.GIAODIEN
 {
-    public partial class Frm_ChuongTrinh : Form
+    public partial class FormChuongTrinh : Form
     {
-        QLNSDataContext db = new QLNSDataContext();
-        public Frm_ChuongTrinh()
+        public FormChuongTrinh()
         {
             InitializeComponent();
-        }
-        private void Frm_ChuongTrinh_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (this.Visible == true)
-            {
-
-                if (MessageBox.Show("Bạn có muốn thoát phải không?", "Thông Báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK && this.Visible == true)
-                {
-                    e.Cancel = true;
-                }
-            }
         }
 
         private void DSSachToolStripMenuItem_Click(object sender, EventArgs e)
@@ -38,9 +27,9 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void DSKhachHangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_DanhSachKH frmKH = new Frm_DanhSachKH();
+           // Frm_DanhSachKH frmKH = new Frm_DanhSachKH();
             this.Hide();
-            frmKH.ShowDialog();
+           // frmKH.ShowDialog();
             this.Show();
         }
 
@@ -54,7 +43,7 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void PhieuNhapHDToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_DachSachHD frmHD = new Frm_DachSachHD();
+            FormHoaDon frmHD = new FormHoaDon();
             this.Hide();
             frmHD.ShowDialog();
             this.Show();
@@ -76,36 +65,9 @@ namespace DoanQLNhaSach.GIAODIEN
             this.Show();
         }
 
-        private void DanhSachNVToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BaoCaoTonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormNhanVien frmNV = new FormNhanVien();
-            this.Hide();
-            frmNV.ShowDialog();
-            this.Show();
-        }
 
-        private void Frm_ChuongTrinh_Load(object sender, EventArgs e)
-        {
-            FormLogin frmLG = new FormLogin();
-
-            //int flag = kiemtraQuyen.flag;
-            //if (flag == 1)
-            //{
-
-            //    DanhSachNVToolStripMenuItem.Visible = false;
-            //}
-        }
-
-        private void DoiMatKhauToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_DoiMatKhau frmDMK = new Frm_DoiMatKhau();
-            frmDMK.ShowDialog();
-        }
-
-        private void ThoatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (this.Visible == true)
-                Application.Exit();
         }
 
         private void DangXuatToolStripMenuItem_Click(object sender, EventArgs e)
@@ -116,11 +78,5 @@ namespace DoanQLNhaSach.GIAODIEN
             if (this.Visible == true)
                 this.Close();
         }
-
-        private void ThongKeBCToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

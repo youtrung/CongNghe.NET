@@ -140,7 +140,7 @@ namespace DoanQLNhaSach.GIAODIEN
                 return;
             }
             string mahd = txtMaHD.Text;
-            string makh1 = txtMaKH.Text;
+            string makh = txtMaKH.Text;
             string tenkh = txtTenKH.Text;
             DateTime ngaylaphoadon = dtpngaylaphoadon.Value.Date;
             int tongtien = Int32.Parse(txtTongtien.Text);
@@ -168,5 +168,14 @@ namespace DoanQLNhaSach.GIAODIEN
 
         }
 
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -122,5 +122,14 @@ namespace DoanQLNhaSach.GIAODIEN
 
         }
 
+        private void BaoCaoTonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BaoCaoNoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

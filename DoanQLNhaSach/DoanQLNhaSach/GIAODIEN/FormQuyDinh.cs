@@ -17,7 +17,8 @@ namespace DoanQLNhaSach.GIAODIEN
         {
             InitializeComponent();
         }
-
+        public static int qdSoluongton;
+        public static int qdSoluongnhaps;
         private void FormQuyDinh_Load(object sender, EventArgs e)
         {
             if (kiemtraQuyen == 1)
@@ -46,9 +47,12 @@ namespace DoanQLNhaSach.GIAODIEN
                 }
 
                 string luongsach = txtLuongSach.Text;
+                qdSoluongnhaps = Int32.Parse(luongsach);
                 int KHno = Convert.ToInt32(txtNo.Text);
                 string tonNhap = txtTon1.Text;
+                qdSoluongton= Int32.Parse(tonNhap);
                 string tonBan = txtTon2.Text;
+
                 var data = db.QuyDinhs.Where(t => t.MaQuyDinh == "1").SingleOrDefault();
                 data.NhapToiThieu = luongsach;
                 data.TonNhapToiThieu = tonNhap;

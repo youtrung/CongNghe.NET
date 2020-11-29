@@ -104,12 +104,13 @@
             this.btnTim.TabIndex = 4;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.dtgvHD);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.groupBox3.Location = new System.Drawing.Point(260, 104);
+            this.groupBox3.Location = new System.Drawing.Point(274, 104);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(567, 177);
             this.groupBox3.TabIndex = 53;
@@ -236,6 +237,7 @@
             this.btnXoa.TabIndex = 30;
             this.btnXoa.Text = "  XÓA";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // txtTongtien
             // 
