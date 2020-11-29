@@ -31,8 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_DachSachHD));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtMaKH = new System.Windows.Forms.TextBox();
-            this.btnTim = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dtgvHD = new System.Windows.Forms.DataGridView();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +55,7 @@
             this.lakh = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.cbMaHD = new System.Windows.Forms.ComboBox();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHD)).BeginInit();
@@ -64,9 +64,9 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.cbMaHD);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.txtMaKH);
-            this.groupBox4.Controls.Add(this.btnTim);
+            this.groupBox4.Controls.Add(this.btnReload);
             this.groupBox4.ForeColor = System.Drawing.Color.Blue;
             this.groupBox4.Location = new System.Drawing.Point(12, 104);
             this.groupBox4.Name = "groupBox4";
@@ -81,29 +81,23 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(26, 45);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 13);
+            this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Mã khách hàng";
+            this.label7.Text = "Mã hóa đơn";
             // 
-            // txtMaKH
+            // btnReload
             // 
-            this.txtMaKH.Location = new System.Drawing.Point(114, 45);
-            this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(123, 20);
-            this.txtMaKH.TabIndex = 0;
-            // 
-            // btnTim
-            // 
-            this.btnTim.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.ForeColor = System.Drawing.Color.Black;
-            this.btnTim.Location = new System.Drawing.Point(114, 83);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(107, 88);
-            this.btnTim.TabIndex = 4;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = false;
+            this.btnReload.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReload.ForeColor = System.Drawing.Color.Black;
+            this.btnReload.Location = new System.Drawing.Point(114, 83);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(107, 88);
+            this.btnReload.TabIndex = 4;
+            this.btnReload.Text = "Reload";
+            this.btnReload.UseVisualStyleBackColor = false;
+            this.btnReload.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // groupBox3
             // 
@@ -344,6 +338,15 @@
             this.label2.TabIndex = 55;
             this.label2.Text = "HÓA ĐƠN BÁN SÁCH";
             // 
+            // cbMaHD
+            // 
+            this.cbMaHD.FormattingEnabled = true;
+            this.cbMaHD.Location = new System.Drawing.Point(107, 42);
+            this.cbMaHD.Name = "cbMaHD";
+            this.cbMaHD.Size = new System.Drawing.Size(121, 21);
+            this.cbMaHD.TabIndex = 6;
+            this.cbMaHD.SelectedIndexChanged += new System.EventHandler(this.cbMaHD_SelectedIndexChanged);
+            // 
             // Frm_DachSachHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,8 +374,7 @@
 
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtMaKH;
-        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dtgvHD;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -396,5 +398,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngaylap;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tongtien;
+        private System.Windows.Forms.ComboBox cbMaHD;
     }
 }

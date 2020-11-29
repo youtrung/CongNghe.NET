@@ -44,6 +44,9 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void Frm_DanhSachKH_Load(object sender, EventArgs e)
         {
+            cbMaKH.DisplayMember = "MaKh";
+            cbMaKH.DataSource = db.KhachHangs;
+            cbMaKH.SelectedIndex = 0;
             loadKhachHang();
             btnLuu.Enabled = false;
         }
@@ -209,5 +212,50 @@ namespace DoanQLNhaSach.GIAODIEN
         {
 
         }
+        public void loadKhachHangTheoTheMaKH(string t)
+        {
+            var data = from k in db.KhachHangs
+                       where k.MaKh.Contains(t)
+                       select new
+                       {
+                           MaKH = k.MaKh,
+                           TenKH = k.HoTen,
+                           DiaChi = k.DiaChi,
+                           Email = k.Email,
+                           SoDienThoai = k.SDT,
+                           TongNo = k.TongNo,
+                       };
+            if (data != null)
+            {
+                dtgvKH.DataSource = data;
+            }
+            else
+                return;
+        }
+        public void Cleardata()
+        {
+            txtMaKH.Clear();
+            txtTenKH.Clear();
+            txtEmail.Clear();
+            txtDiaChi.Clear();
+            txtDienthoai.Clear();
+            txtTongno.Clear();
+
+        }
+
+        private void cbMaKH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string makh = cbMaKH.Text.ToString();
+            loadKhachHangTheoTheMaKH(makh);
+            Cleardata();
+
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            loadKhachHang();
+
+        }
+
     }
 }

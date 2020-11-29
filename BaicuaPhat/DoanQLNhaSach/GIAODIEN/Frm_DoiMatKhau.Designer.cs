@@ -139,6 +139,7 @@
             this.txtTendangnhap.Name = "txtTendangnhap";
             this.txtTendangnhap.Size = new System.Drawing.Size(194, 20);
             this.txtTendangnhap.TabIndex = 12;
+            this.txtTendangnhap.TextChanged += new System.EventHandler(this.txtTendangnhap_TextChanged);
             // 
             // label5
             // 

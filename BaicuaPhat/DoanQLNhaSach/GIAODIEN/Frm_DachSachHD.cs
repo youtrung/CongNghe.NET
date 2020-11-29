@@ -30,6 +30,9 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void Frm_DachSachHD_Load(object sender, EventArgs e)
         {
+            cbMaHD.DisplayMember = "MaHD";
+            cbMaHD.DataSource = db.HoaDons;
+            cbMaHD.SelectedIndex = 0;
             loadHoaDon();
             btnLuu.Enabled = false;
         }
@@ -189,6 +192,7 @@ namespace DoanQLNhaSach.GIAODIEN
                 var kt = db.HoaDons.Where(t => t.MaHD == MaHD).SingleOrDefault();
                 db.HoaDons.DeleteOnSubmit(kt);
                 db.SubmitChanges();
+                Cleardata();
                 MessageBox.Show("Xoá khách hàng thành công!");
 
             }
@@ -219,6 +223,43 @@ namespace DoanQLNhaSach.GIAODIEN
                 btnSua.Text = "Sửa";
             }
         }
+        public void loadHoaDonTheoTheMaHD(string t)
+        {
+            var data = from k in db.HoaDons
+                       where k.MaHD.Contains(t)
+                       select new
+                       {
+                           MaHD = k.MaHD,
+                           MaKH1 = k.MaKH,
+                           TenKH = k.TenKH,
+                           NgaylapHD = k.Ngaylap,
+                           Tongtien = k.TongTien,
+                       };
+            if (data != null)
+            {
+                dtgvHD.DataSource = data;
+            }
+            else
+                return;
+        }
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            loadHoaDon();
+        }
 
+        private void cbMaHD_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string mahd = cbMaHD.Text.ToString();
+            loadHoaDonTheoTheMaHD(mahd);
+            Cleardata();
+
+        }
+        public void Cleardata()
+        {
+            txtMaKH1.Clear();
+            txtTenKH.Clear();
+            txtMaHD.Clear();
+            txtTongtien.Clear();
+        }
     }
 }

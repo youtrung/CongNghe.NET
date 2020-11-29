@@ -57,5 +57,10 @@ namespace QLNhaSach.GiaoDien
         {
             
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+        
+        }
     }
 }

@@ -38,8 +38,7 @@
             this.TongNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.btnTim = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtTongno = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -59,6 +58,7 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.cbMaKH = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKH)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -120,9 +120,9 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.cbMaKH);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.txtTimKiem);
-            this.groupBox4.Controls.Add(this.btnTim);
+            this.groupBox4.Controls.Add(this.btnReload);
             this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox4.Location = new System.Drawing.Point(16, 96);
             this.groupBox4.Name = "groupBox4";
@@ -134,31 +134,25 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 31);
+            this.label7.Location = new System.Drawing.Point(6, 31);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(82, 13);
             this.label7.TabIndex = 5;
             this.label7.Text = "Mã khách hàng";
             // 
-            // txtTimKiem
+            // btnReload
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(92, 31);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(117, 20);
-            this.txtTimKiem.TabIndex = 0;
-            // 
-            // btnTim
-            // 
-            this.btnTim.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.ForeColor = System.Drawing.Color.Black;
-            this.btnTim.Location = new System.Drawing.Point(92, 76);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(117, 55);
-            this.btnTim.TabIndex = 4;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = false;
+            this.btnReload.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReload.ForeColor = System.Drawing.Color.Black;
+            this.btnReload.Location = new System.Drawing.Point(92, 76);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(117, 55);
+            this.btnReload.TabIndex = 4;
+            this.btnReload.Text = "Reload";
+            this.btnReload.UseVisualStyleBackColor = false;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // groupBox1
             // 
@@ -358,6 +352,15 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Hiển thị danh sách khách hàng";
             // 
+            // cbMaKH
+            // 
+            this.cbMaKH.FormattingEnabled = true;
+            this.cbMaKH.Location = new System.Drawing.Point(88, 28);
+            this.cbMaKH.Name = "cbMaKH";
+            this.cbMaKH.Size = new System.Drawing.Size(121, 21);
+            this.cbMaKH.TabIndex = 6;
+            this.cbMaKH.SelectedIndexChanged += new System.EventHandler(this.cbMaKH_SelectedIndexChanged);
+            // 
             // Frm_DanhSachKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,8 +391,7 @@
         private System.Windows.Forms.DataGridView dtgvKH;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtTongno;
         private System.Windows.Forms.Label label9;
@@ -415,5 +417,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongNo;
+        private System.Windows.Forms.ComboBox cbMaKH;
     }
 }
