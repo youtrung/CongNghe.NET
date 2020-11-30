@@ -52,11 +52,23 @@
     <Compile Include="GIAODIEN\FormChuongTrinh.Designer.cs">
       <DependentUpon>FormChuongTrinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="GIAODIEN\FormDoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormDoiMK.Designer.cs">
+      <DependentUpon>FormDoiMK.cs</DependentUpon>
+    </Compile>
     <Compile Include="GIAODIEN\FormHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GIAODIEN\FormHoaDon.Designer.cs">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIAODIEN\FormKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormKhachHang.Designer.cs">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="GIAODIEN\FormLogin.cs">
       <SubType>Form</SubType>
@@ -110,8 +122,14 @@
     <EmbeddedResource Include="GIAODIEN\FormChuongTrinh.resx">
       <DependentUpon>FormChuongTrinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormDoiMK.resx">
+      <DependentUpon>FormDoiMK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GIAODIEN\FormHoaDon.resx">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormKhachHang.resx">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GIAODIEN\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

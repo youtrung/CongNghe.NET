@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static DoanQLNhaSach.GIAODIEN.FormLogin;
 
 namespace DoanQLNhaSach.GIAODIEN
 {
@@ -27,9 +28,9 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void DSKhachHangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // Frm_DanhSachKH frmKH = new Frm_DanhSachKH();
+            FormKhachHang  frmKH = new FormKhachHang();
             this.Hide();
-           // frmKH.ShowDialog();
+            frmKH.ShowDialog();
             this.Show();
         }
 
@@ -77,6 +78,18 @@ namespace DoanQLNhaSach.GIAODIEN
             frmLG.ShowDialog();
             if (this.Visible == true)
                 this.Close();
+        }
+
+        private void DoiMatKhauToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+                this.Hide();
+                FormDoiMK frm = new FormDoiMK();
+                frm.ShowDialog();
+            
+          
+           
+
         }
     }
 }

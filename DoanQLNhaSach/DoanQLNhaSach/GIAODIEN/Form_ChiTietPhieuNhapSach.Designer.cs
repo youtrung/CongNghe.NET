@@ -34,7 +34,6 @@
             this.txtMaSach = new System.Windows.Forms.TextBox();
             this.txtTenSach = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnXuat = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
@@ -67,7 +66,6 @@
             this.groupBox1.Controls.Add(this.txtMaSach);
             this.groupBox1.Controls.Add(this.txtTenSach);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.btnXuat);
             this.groupBox1.Controls.Add(this.btnHuy);
             this.groupBox1.Controls.Add(this.btnLuu);
             this.groupBox1.Controls.Add(this.btnSua);
@@ -137,20 +135,6 @@
             this.label3.TabIndex = 61;
             this.label3.Text = "Tên Sách:";
             // 
-            // btnXuat
-            // 
-            this.btnXuat.BackColor = System.Drawing.Color.LightGreen;
-            this.btnXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnXuat.Image")));
-            this.btnXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuat.Location = new System.Drawing.Point(734, 84);
-            this.btnXuat.Name = "btnXuat";
-            this.btnXuat.Size = new System.Drawing.Size(95, 42);
-            this.btnXuat.TabIndex = 60;
-            this.btnXuat.Text = "   XUẤT   ";
-            this.btnXuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXuat.UseVisualStyleBackColor = false;
-            // 
             // btnHuy
             // 
             this.btnHuy.BackColor = System.Drawing.Color.NavajoWhite;
@@ -172,7 +156,7 @@
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(734, 19);
+            this.btnLuu.Location = new System.Drawing.Point(734, 107);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(94, 36);
             this.btnLuu.TabIndex = 57;
@@ -406,7 +390,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtTenSach;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnXuat;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;

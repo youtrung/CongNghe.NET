@@ -20,11 +20,37 @@ namespace DoanQLNhaSach.GIAODIEN
         public static string getMaPN;
         private void FormPhieuNhap_Load(object sender, EventArgs e)
         {
+            loadtreeView();
             loadData();
         }
-  
+        
+        public void loadtreeView()
+        {
+            treePhieuNhap.Nodes.Clear();
+
+            TreeNode nodeRoot = new TreeNode("Phieu Nhap ");
+            treePhieuNhap.Nodes.Add(nodeRoot);
+            var phieu = from p in db.PhieuNhaps select p;
+            foreach (var pn in phieu)
+            {
+                TreeNode nodeP = new TreeNode(pn.MaPhieuNhap);
+                nodeP.Tag = pn;
+                nodeRoot.Nodes.Add(nodeP);
+                var pns = from ct in db.ChiTietPhieuNhaps where ct.MaPhieuNhap == pn.MaPhieuNhap select ct;
+                foreach (var it in pns)
+                {
+                    TreeNode nodeS = new TreeNode(it.Sach.TenSach);
+                    nodeS.Tag = it ;
+                    nodeP.Nodes.Add(nodeS);
+                }
+
+            }
+            treePhieuNhap.ExpandAll();
+        }
         public  void loadData()
         {
+
+
             var data = from k in db.PhieuNhaps 
                       // join t in db.ChiTietPhieuNhaps on k.MaPhieuNhap equals t.MaPhieuNhap
                        //into ps from t in ps.DefaultIfEmpty()
@@ -46,6 +72,7 @@ namespace DoanQLNhaSach.GIAODIEN
         {
             them();
             loadData();
+            loadtreeView();
         }
         public void them ()
         {
@@ -86,7 +113,8 @@ namespace DoanQLNhaSach.GIAODIEN
                     db.SubmitChanges();
                     MessageBox.Show("Xoá thành công!");
                     loadData();
-                    
+                    loadtreeView();
+
                 }
                     
                 
@@ -154,6 +182,7 @@ namespace DoanQLNhaSach.GIAODIEN
         private void btnLuu_Click(object sender, EventArgs e)
         {
             sua();
+            loadtreeView();
             loadData();
             txtMaPN.Enabled = true;
             btnThem.Enabled = true;

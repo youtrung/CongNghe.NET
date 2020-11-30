@@ -79,14 +79,14 @@
             // DSSachToolStripMenuItem
             // 
             this.DSSachToolStripMenuItem.Name = "DSSachToolStripMenuItem";
-            this.DSSachToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DSSachToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.DSSachToolStripMenuItem.Text = "TRA CỨU SÁCH";
             this.DSSachToolStripMenuItem.Click += new System.EventHandler(this.DSSachToolStripMenuItem_Click);
             // 
             // DSKhachHangToolStripMenuItem
             // 
             this.DSKhachHangToolStripMenuItem.Name = "DSKhachHangToolStripMenuItem";
-            this.DSKhachHangToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DSKhachHangToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.DSKhachHangToolStripMenuItem.Text = "KHÁCH HÀNG";
             this.DSKhachHangToolStripMenuItem.Click += new System.EventHandler(this.DSKhachHangToolStripMenuItem_Click);
             // 
@@ -133,14 +133,14 @@
             // BaoCaoTonToolStripMenuItem
             // 
             this.BaoCaoTonToolStripMenuItem.Name = "BaoCaoTonToolStripMenuItem";
-            this.BaoCaoTonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.BaoCaoTonToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.BaoCaoTonToolStripMenuItem.Text = "BÁO CÁO TỒN";
             this.BaoCaoTonToolStripMenuItem.Click += new System.EventHandler(this.BaoCaoTonToolStripMenuItem_Click);
             // 
             // BaoCaoNoToolStripMenuItem
             // 
             this.BaoCaoNoToolStripMenuItem.Name = "BaoCaoNoToolStripMenuItem";
-            this.BaoCaoNoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.BaoCaoNoToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.BaoCaoNoToolStripMenuItem.Text = "BÁO CÁO NỢ";
             // 
             // ChucNangAdminToolStripMenuItem
@@ -180,6 +180,7 @@
             this.DoiMatKhauToolStripMenuItem.Name = "DoiMatKhauToolStripMenuItem";
             this.DoiMatKhauToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.DoiMatKhauToolStripMenuItem.Text = "ĐỔI MẬT KHẨU";
+            this.DoiMatKhauToolStripMenuItem.Click += new System.EventHandler(this.DoiMatKhauToolStripMenuItem_Click);
             // 
             // DangXuatToolStripMenuItem
             // 

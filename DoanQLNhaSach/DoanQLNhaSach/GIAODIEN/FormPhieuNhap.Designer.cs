@@ -45,13 +45,16 @@
             this.TONGTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.btnBoSung = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.treePhieuNhap = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.dataPN)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(84, 85);
+            this.label1.Location = new System.Drawing.Point(124, 339);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 0;
@@ -60,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 133);
+            this.label2.Location = new System.Drawing.Point(369, 338);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 1;
@@ -69,7 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 184);
+            this.label3.Location = new System.Drawing.Point(592, 338);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 2;
@@ -77,7 +80,7 @@
             // 
             // txtMaPN
             // 
-            this.txtMaPN.Location = new System.Drawing.Point(171, 82);
+            this.txtMaPN.Location = new System.Drawing.Point(235, 335);
             this.txtMaPN.Name = "txtMaPN";
             this.txtMaPN.Size = new System.Drawing.Size(116, 20);
             this.txtMaPN.TabIndex = 3;
@@ -85,7 +88,7 @@
             // txtTongTien
             // 
             this.txtTongTien.Enabled = false;
-            this.txtTongTien.Location = new System.Drawing.Point(171, 177);
+            this.txtTongTien.Location = new System.Drawing.Point(663, 335);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(116, 20);
             this.txtTongTien.TabIndex = 4;
@@ -94,14 +97,14 @@
             // 
             this.dtpNgaynhap.CustomFormat = "dd/MM/yyyy";
             this.dtpNgaynhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgaynhap.Location = new System.Drawing.Point(171, 133);
+            this.dtpNgaynhap.Location = new System.Drawing.Point(436, 332);
             this.dtpNgaynhap.Name = "dtpNgaynhap";
             this.dtpNgaynhap.Size = new System.Drawing.Size(116, 20);
             this.dtpNgaynhap.TabIndex = 5;
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(60, 317);
+            this.btnThem.Location = new System.Drawing.Point(367, 375);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(85, 25);
             this.btnThem.TabIndex = 6;
@@ -111,7 +114,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(202, 317);
+            this.btnXoa.Location = new System.Drawing.Point(480, 375);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(85, 25);
             this.btnXoa.TabIndex = 7;
@@ -121,7 +124,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(202, 364);
+            this.btnSua.Location = new System.Drawing.Point(586, 375);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(85, 25);
             this.btnSua.TabIndex = 8;
@@ -132,7 +135,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(60, 364);
+            this.btnLuu.Location = new System.Drawing.Point(694, 375);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(85, 25);
             this.btnLuu.TabIndex = 9;
@@ -197,19 +200,37 @@
             // btnBoSung
             // 
             this.btnBoSung.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnBoSung.Location = new System.Drawing.Point(182, 215);
+            this.btnBoSung.Location = new System.Drawing.Point(646, 17);
             this.btnBoSung.Name = "btnBoSung";
-            this.btnBoSung.Size = new System.Drawing.Size(105, 59);
+            this.btnBoSung.Size = new System.Drawing.Size(133, 59);
             this.btnBoSung.TabIndex = 44;
             this.btnBoSung.Text = "Xem Và Bổ Sung Chi Tiết Phiếu Nhập";
             this.btnBoSung.UseVisualStyleBackColor = true;
             this.btnBoSung.Click += new System.EventHandler(this.btnBoSung_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.treePhieuNhap);
+            this.groupBox1.Location = new System.Drawing.Point(12, 47);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(322, 282);
+            this.groupBox1.TabIndex = 45;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "TreeView";
+            // 
+            // treePhieuNhap
+            // 
+            this.treePhieuNhap.Location = new System.Drawing.Point(1, 20);
+            this.treePhieuNhap.Name = "treePhieuNhap";
+            this.treePhieuNhap.Size = new System.Drawing.Size(315, 256);
+            this.treePhieuNhap.TabIndex = 0;
             // 
             // FormPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBoSung);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataPN);
@@ -228,6 +249,7 @@
             this.Text = "FormPhieuNhap";
             this.Load += new System.EventHandler(this.FormPhieuNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataPN)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +274,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TONGTIEN;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnBoSung;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TreeView treePhieuNhap;
     }
 }
