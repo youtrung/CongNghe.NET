@@ -32,8 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvBaoCaoTon = new System.Windows.Forms.DataGridView();
-            this.btnXuat = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TonDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,6 +39,8 @@
             this.TongBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhatSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TonCuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnXuat = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBaoCaoTon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,24 +89,6 @@
             this.dgvBaoCaoTon.Size = new System.Drawing.Size(1187, 310);
             this.dgvBaoCaoTon.TabIndex = 3;
             // 
-            // btnXuat
-            // 
-            this.btnXuat.Location = new System.Drawing.Point(654, 704);
-            this.btnXuat.Name = "btnXuat";
-            this.btnXuat.Size = new System.Drawing.Size(283, 106);
-            this.btnXuat.TabIndex = 4;
-            this.btnXuat.Text = "IN BÁO CÁO ";
-            this.btnXuat.UseVisualStyleBackColor = true;
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.Location = new System.Drawing.Point(989, 703);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(185, 107);
-            this.btnThoat.TabIndex = 5;
-            this.btnThoat.Text = "THOÁT";
-            this.btnThoat.UseVisualStyleBackColor = true;
-            // 
             // MaSach
             // 
             this.MaSach.DataPropertyName = "MaSach";
@@ -147,6 +129,26 @@
             this.TonCuoi.DataPropertyName = "TonCuoi";
             this.TonCuoi.HeaderText = "Tồn Cuối";
             this.TonCuoi.Name = "TonCuoi";
+            // 
+            // btnXuat
+            // 
+            this.btnXuat.Location = new System.Drawing.Point(654, 704);
+            this.btnXuat.Name = "btnXuat";
+            this.btnXuat.Size = new System.Drawing.Size(283, 106);
+            this.btnXuat.TabIndex = 4;
+            this.btnXuat.Text = "IN BÁO CÁO ";
+            this.btnXuat.UseVisualStyleBackColor = true;
+            this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(989, 703);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(185, 107);
+            this.btnThoat.TabIndex = 5;
+            this.btnThoat.Text = "THOÁT";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmBaoCao1
             // 

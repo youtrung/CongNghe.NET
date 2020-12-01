@@ -44,5 +44,16 @@ namespace DoanQLNhaSach.hanh
                 dgvBaoCaoTon.DataSource = dataLinQ;
             }
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnXuat_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

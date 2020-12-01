@@ -16,7 +16,7 @@ namespace DoanQLNhaSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new hanh.frmBaoCao2());
+            Application.Run(new hanh.frmBanSach());
         }
     }
 }
