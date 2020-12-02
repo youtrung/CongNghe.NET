@@ -30,10 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.txtTenKH2 = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtTenSach = new System.Windows.Forms.TextBox();
@@ -74,10 +74,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.btnLuu);
+            this.groupBox1.Controls.Add(this.btnSua);
+            this.groupBox1.Controls.Add(this.btnXoa);
+            this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.txtTenKH2);
             this.groupBox1.Controls.Add(this.txtDonGia);
             this.groupBox1.Controls.Add(this.txtTenSach);
@@ -103,41 +103,43 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lập Hóa Đơn";
             // 
-            // button7
+            // btnLuu
             // 
-            this.button7.Location = new System.Drawing.Point(1227, 332);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(134, 58);
-            this.button7.TabIndex = 20;
-            this.button7.Text = "Lưu";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnLuu.Location = new System.Drawing.Point(1227, 332);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(134, 58);
+            this.btnLuu.TabIndex = 20;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnSua
             // 
-            this.button6.Location = new System.Drawing.Point(1065, 332);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(145, 58);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "Sửa";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnSua.Location = new System.Drawing.Point(1065, 332);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(145, 58);
+            this.btnSua.TabIndex = 19;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnXoa
             // 
-            this.button5.Location = new System.Drawing.Point(899, 332);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(151, 58);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Xóa";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(899, 332);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(151, 58);
+            this.btnXoa.TabIndex = 18;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button4
+            // btnThem
             // 
-            this.button4.Location = new System.Drawing.Point(742, 332);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(144, 58);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Thêm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnThem.Location = new System.Drawing.Point(742, 332);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(144, 58);
+            this.btnThem.TabIndex = 17;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtTenKH2
             // 
@@ -329,6 +331,7 @@
             this.dgvDSHD.RowTemplate.Height = 33;
             this.dgvDSHD.Size = new System.Drawing.Size(1439, 283);
             this.dgvDSHD.TabIndex = 6;
+            this.dgvDSHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSHD_CellClick);
             // 
             // STT
             // 
@@ -392,10 +395,10 @@
         private System.Windows.Forms.Button btnXuat;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.DataGridView dgvDSHD;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtTenKH2;
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.TextBox txtTenSach;
