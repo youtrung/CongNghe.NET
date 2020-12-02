@@ -341,5 +341,15 @@ namespace QLNhaSach
                 e.Cancel = true;
             }
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMaSach_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,6 +17,7 @@ namespace DoanQLNhaSach.GIAODIEN
         {
             InitializeComponent();
         }
+        public static string getMaHD, getMaKH;
         int flag = -1;
         public bool IsNumber(string pValue)
         {
@@ -223,26 +224,7 @@ namespace DoanQLNhaSach.GIAODIEN
 
   
 
-        private void txtMaKH_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-            var t = db.KhachHangs.Where(r => r.MaKh == txtMaKH.Text).SingleOrDefault();
-            if (t!=null)
-            {
-                txtTenKH.Text = t.HoTen;
-            }
-            var dl = from hd in db.HoaDons
-                     where hd.MaKH == txtMaKH.Text
-                     select new
-                     {
-                         MaHD = hd.MaHD,
-                         MaKH = hd.MaKH,
-                         TenKH = hd.TenKH,
-                         Ngaylap = hd.Ngaylap,
-                         TongTien = hd.TongTien,
-                     };
-            dtgvHD.DataSource = dl;
-        }
+       
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
@@ -258,6 +240,25 @@ namespace DoanQLNhaSach.GIAODIEN
             txtTenKH.Text = hd.TenKH;
             dtpngaylaphoadon.Value = hd.Ngaylap;
             txtTongtien.Text = hd.TongTien.ToString();
+
+        }
+
+        private void btnReloadd_Click(object sender, EventArgs e)
+        {
+            loadHoaDon();
+        }
+
+        private void btnbsct_Click(object sender, EventArgs e)
+        {
+            if(txtMaHD.Text=="")
+            {
+                MessageBox.Show("Xin hãy chọn hóa đơn muốn thêm vào");
+                return;
+            }
+            getMaHD = txtMaHD.Text;
+            getMaKH = txtMaKH.Text;
+            FormBanSach frm = new FormBanSach();
+            frm.ShowDialog();
 
         }
     }

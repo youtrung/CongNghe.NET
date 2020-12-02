@@ -110,6 +110,7 @@ namespace QLNhaSach.GiaoDien
             TimSachBUS.UpdateSoLuongSach(txtMaSach.Text, check,tondau.ToString(),phatsinh.ToString(),tn.ToString(),tongban.ToString());
 
         }
+
         public void UpdateSoLuongTon_Xoa_Sua()
         {
             // txtMaSach.Text = GetMaSach.getMaSach;

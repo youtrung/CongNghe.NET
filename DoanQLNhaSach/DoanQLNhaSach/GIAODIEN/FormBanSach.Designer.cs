@@ -1,6 +1,6 @@
-﻿namespace QLNhaSach
+﻿namespace DoanQLNhaSach.GIAODIEN
 {
-    partial class frmBanSach
+    partial class FormBanSach
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBanSach));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBanSach));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -52,18 +52,13 @@
             this.txtTenSach = new System.Windows.Forms.TextBox();
             this.txtMaMoi = new System.Windows.Forms.TextBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
-            this.btnXuat = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.dgvDSHD = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSHD)).BeginInit();
             this.SuspendLayout();
@@ -73,10 +68,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(267, 101);
+            this.label1.Location = new System.Drawing.Point(272, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(238, 25);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 1;
             this.label1.Text = "HÓA ĐƠN BÁN SÁCH";
             // 
             // groupBox2
@@ -103,13 +98,12 @@
             this.groupBox2.Controls.Add(this.txtMaMoi);
             this.groupBox2.Controls.Add(this.txtDonGia);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(15, 129);
+            this.groupBox2.Location = new System.Drawing.Point(40, 74);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(720, 253);
-            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lập Hóa Đơn";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnLuu
             // 
@@ -177,7 +171,6 @@
             this.txtMaSach.ReadOnly = true;
             this.txtMaSach.Size = new System.Drawing.Size(129, 26);
             this.txtMaSach.TabIndex = 19;
-            this.txtMaSach.TextChanged += new System.EventHandler(this.txtMaSach_TextChanged);
             // 
             // txtSoLuong
             // 
@@ -185,7 +178,6 @@
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(129, 26);
             this.txtSoLuong.TabIndex = 0;
-            this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged);
             // 
             // label11
             // 
@@ -315,79 +307,31 @@
             this.txtDonGia.ReadOnly = true;
             this.txtDonGia.Size = new System.Drawing.Size(225, 26);
             this.txtDonGia.TabIndex = 15;
-            this.txtDonGia.TextChanged += new System.EventHandler(this.txtDonGia_TextChanged);
-            // 
-            // btnXuat
-            // 
-            this.btnXuat.BackColor = System.Drawing.Color.LightGreen;
-            this.btnXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnXuat.Image")));
-            this.btnXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuat.Location = new System.Drawing.Point(444, 388);
-            this.btnXuat.Name = "btnXuat";
-            this.btnXuat.Size = new System.Drawing.Size(168, 42);
-            this.btnXuat.TabIndex = 28;
-            this.btnXuat.Text = "   XUẤT HÓA ĐƠN   ";
-            this.btnXuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXuat.UseVisualStyleBackColor = false;
-            this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(12, 401);
+            this.label13.Location = new System.Drawing.Point(37, 330);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(127, 16);
-            this.label13.TabIndex = 30;
+            this.label13.TabIndex = 31;
             this.label13.Text = "Danh sách hóa đơn:";
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.BackColor = System.Drawing.Color.NavajoWhite;
-            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.Image")));
-            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(618, 388);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(80, 42);
-            this.btnHuy.TabIndex = 31;
-            this.btnHuy.Text = "  HỦY";
-            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHuy.UseVisualStyleBackColor = false;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(762, 88);
-            this.panel1.TabIndex = 32;
             // 
             // dgvDSHD
             // 
             this.dgvDSHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
             this.MaSach,
+            this.MaHD,
             this.TenSach,
             this.DonGia,
             this.SoLuong});
-            this.dgvDSHD.Location = new System.Drawing.Point(12, 436);
+            this.dgvDSHD.Location = new System.Drawing.Point(40, 356);
             this.dgvDSHD.Name = "dgvDSHD";
             this.dgvDSHD.Size = new System.Drawing.Size(738, 156);
-            this.dgvDSHD.TabIndex = 29;
+            this.dgvDSHD.TabIndex = 32;
             this.dgvDSHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSHD_CellClick);
-            // 
-            // STT
-            // 
-            this.STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.STT.DataPropertyName = "STT";
-            this.STT.FillWeight = 40F;
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
             // 
             // MaSach
             // 
@@ -395,6 +339,12 @@
             this.MaSach.DataPropertyName = "MaSach";
             this.MaSach.HeaderText = "Mã Sách";
             this.MaSach.Name = "MaSach";
+            // 
+            // MaHD
+            // 
+            this.MaHD.DataPropertyName = "MaHD";
+            this.MaHD.HeaderText = "Mã Hóa Đơn";
+            this.MaHD.Name = "MaHD";
             // 
             // TenSach
             // 
@@ -417,37 +367,18 @@
             this.SoLuong.HeaderText = "Số lượng";
             this.SoLuong.Name = "SoLuong";
             // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // frmBanSach
+            // FormBanSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 605);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.label13);
+            this.ClientSize = new System.Drawing.Size(841, 524);
             this.Controls.Add(this.dgvDSHD);
-            this.Controls.Add(this.btnXuat);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
-            this.Name = "frmBanSach";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LẬP HÓA ĐƠN BÁN SÁCH";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmBanSach_FormClosing);
-            this.Load += new System.EventHandler(this.frmBanSach_Load);
+            this.Name = "FormBanSach";
+            this.Text = "FormBanSach";
+            this.Load += new System.EventHandler(this.FormBanSach_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSHD)).EndInit();
@@ -460,6 +391,17 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.TextBox txtTongTien;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnMaSach;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.TextBox txtMaSach;
+        private System.Windows.Forms.TextBox txtSoLuong;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.TextBox txtMaKH2;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -470,26 +412,10 @@
         private System.Windows.Forms.TextBox txtTenSach;
         private System.Windows.Forms.TextBox txtMaMoi;
         private System.Windows.Forms.TextBox txtDonGia;
-        private System.Windows.Forms.TextBox txtSoLuong;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnXuat;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnMaSach;
-        private System.Windows.Forms.TextBox txtMaSach;
-        private System.Windows.Forms.TextBox txtMaKH2;
-        private System.Windows.Forms.TextBox txtTongTien;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.DataGridView dgvDSHD;
-        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
-        private System.Drawing.Printing.PrintDocument printDocument1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSach;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;

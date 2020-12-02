@@ -207,7 +207,13 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            if(txtMaThu.Text=="")
+            {
+                MessageBox.Show("Mã phiếu thu không được trống");
+                return;
+            }
             var dt = db.PhieuThus.Where(r => r.MaPhieuThu == txtMaThu.Text).SingleOrDefault();
+            
             if (dt != null)
             {
                 db.PhieuThus.DeleteOnSubmit(dt);

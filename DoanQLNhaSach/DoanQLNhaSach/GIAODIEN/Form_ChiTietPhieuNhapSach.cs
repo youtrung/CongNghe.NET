@@ -28,6 +28,7 @@ namespace DoanQLNhaSach.GIAODIEN
             }
             return true;
         }
+        public static int TongTienNhap;
         public static string getMS;
         int flag = -1;
         private void Form_ChiTietPhieuNhapSach_Load(object sender, EventArgs e)
@@ -78,14 +79,15 @@ namespace DoanQLNhaSach.GIAODIEN
             }
             Sach s = db.Saches.Where(t => t.MaSach == txtMaSach.Text).SingleOrDefault();
             if (s == null) { MessageBox.Show("Khong ton tai ma sach nay"); return; }
-            if (s.TonCuoi > qdSoluongton)
+            var qd = db.QuyDinhs.Where(t => t.MaQuyDinh == "1").SingleOrDefault();
+            if (s.TonCuoi >Int32.Parse(qd.TonNhapToiThieu))
             {
-                MessageBox.Show("Chỉ được nhập sách có số lượng tồn ít hơn " + qdSoluongton.ToString());
+                MessageBox.Show("Chỉ được nhập sách có số lượng tồn ít hơn " + qd.TonNhapToiThieu);
                 return;
             }
-            if (Int32.Parse(txtSLnhap.Text) < qdSoluongnhaps)
+            if (Int32.Parse(txtSLnhap.Text) < Int32.Parse(qd.NhapToiThieu))
             {
-                MessageBox.Show("Số lượng nhập tối thiểu là " + qdSoluongnhaps);
+                MessageBox.Show("Số lượng nhập tối thiểu là " + qd.NhapToiThieu);
                 return;
             }
             var kt = db.ChiTietPhieuNhaps.Where(r => r.MaPhieuNhap == txtMaPN.Text && r.MaSach == txtMaSach.Text).SingleOrDefault();
@@ -102,6 +104,40 @@ namespace DoanQLNhaSach.GIAODIEN
             ctpn.TongTien = Int32.Parse(txtTongTien.Text);
             db.ChiTietPhieuNhaps.InsertOnSubmit(ctpn);
             db.SubmitChanges();
+            updatesoluongton();
+
+
+        }
+        public void updatesoluongton()
+        {
+            Sach s = db.Saches.Where(t => t.MaSach == txtMaSach.Text).SingleOrDefault();
+            int check = s.TonCuoi + Int32.Parse(txtSLnhap.Text);
+            int tn = Int32.Parse(s.TongNhap) + Int32.Parse(txtSLnhap.Text);
+            int tongban = Int32.Parse(s.TongBan);
+            int phatsinh = tn - tongban;
+
+            int tondau = check - phatsinh;
+            s.TongBan = tongban.ToString();
+            s.TongNhap = tn.ToString();
+            s.TonDau = tondau.ToString();
+            s.TonCuoi = check;
+            db.SubmitChanges();
+        }
+        public void UpdateSoLuongTon_Xoa_Sua()
+        {
+            // txtMaSach.Text = GetMaSach.getMaSach;
+            Sach s = db.Saches.Where(t => t.MaSach == txtMaSach.Text).SingleOrDefault();
+            int check = s.TonCuoi - Int32.Parse(txtSLnhap.Text);
+            int tn = Int32.Parse(s.TongNhap) - Int32.Parse(txtSLnhap.Text);
+            int tongban = Int32.Parse(s.TongBan);
+            int phatsinh = tn - tongban;
+            int tondau = check - phatsinh;
+            s.TongBan = tongban.ToString();
+            s.TongNhap = tn.ToString();
+            s.TonDau = tondau.ToString();
+            s.TonCuoi = check;
+            db.SubmitChanges();
+
 
         }
 
@@ -120,6 +156,7 @@ namespace DoanQLNhaSach.GIAODIEN
             }
             db.ChiTietPhieuNhaps.DeleteOnSubmit(kt);
             db.SubmitChanges();
+            UpdateSoLuongTon_Xoa_Sua();
             loadDS();
 
         }
@@ -180,6 +217,7 @@ namespace DoanQLNhaSach.GIAODIEN
         }
         public void suaCTPN()
         {
+            var qd = db.QuyDinhs.Where(t => t.MaQuyDinh == "1").SingleOrDefault();
             if (txtMaPN.Text == "" || txtMaSach.Text == "" || txtDonGia.Text == "" || txtSLnhap.Text == "" || txtTongTien.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
@@ -195,9 +233,10 @@ namespace DoanQLNhaSach.GIAODIEN
                 MessageBox.Show("Đơn giá phải là số và không được âm", "Thông báo");
                 return;
             }
-            if (Int32.Parse(txtSLnhap.Text) < qdSoluongnhaps)
+
+            if (Int32.Parse(txtSLnhap.Text) < Int32.Parse(qd.NhapToiThieu))
             {
-                MessageBox.Show("Số lượng nhập tối thiểu là " + qdSoluongnhaps);
+                MessageBox.Show("Số lượng nhập tối thiểu là " + qd.NhapToiThieu);
                 return;
             }
             var kt = db.ChiTietPhieuNhaps.Where(t => t.MaPhieuNhap == txtMaPN.Text && t.MaSach == txtMaSach.Text).SingleOrDefault();
@@ -213,6 +252,7 @@ namespace DoanQLNhaSach.GIAODIEN
         private void btnLuu_Click(object sender, EventArgs e)
         {
             suaCTPN();
+            updatesoluongton();
             loadDS();
             txtMaPN.Enabled = true;
             btnThem.Enabled = true;

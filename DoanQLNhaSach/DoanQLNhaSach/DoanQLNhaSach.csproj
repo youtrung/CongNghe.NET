@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GIAODIEN\FormBanSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormBanSach.Designer.cs">
+      <DependentUpon>FormBanSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GIAODIEN\FormChuongTrinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNS.dbml</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GIAODIEN\FormBanSach.resx">
+      <DependentUpon>FormBanSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GIAODIEN\FormChuongTrinh.resx">
       <DependentUpon>FormChuongTrinh.cs</DependentUpon>
     </EmbeddedResource>

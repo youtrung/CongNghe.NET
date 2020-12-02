@@ -40,7 +40,6 @@
             this.Ngaylap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnLoad = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -53,6 +52,8 @@
             this.txtMaHD = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnbsct = new System.Windows.Forms.Button();
+            this.btnReloadd = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHD)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -77,7 +78,7 @@
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(121, 21);
             this.txtMaKH.TabIndex = 6;
-            this.txtMaKH.SelectedIndexChanged += new System.EventHandler(this.txtMaKH_SelectedIndexChanged);
+          
             // 
             // label7
             // 
@@ -148,7 +149,6 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtMaKH);
-            this.groupBox2.Controls.Add(this.btnLoad);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnLuu);
@@ -169,16 +169,6 @@
             this.groupBox2.TabIndex = 59;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lập Hóa Đơn";
-            // 
-            // btnLoad
-            // 
-            this.btnLoad.Location = new System.Drawing.Point(286, 102);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(75, 23);
-            this.btnLoad.TabIndex = 7;
-            this.btnLoad.Text = "refresh";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnSua
             // 
@@ -311,11 +301,41 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tổng tiền:";
             // 
+            // btnbsct
+            // 
+            this.btnbsct.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnbsct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnbsct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbsct.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnbsct.Location = new System.Drawing.Point(648, 200);
+            this.btnbsct.Name = "btnbsct";
+            this.btnbsct.Size = new System.Drawing.Size(98, 54);
+            this.btnbsct.TabIndex = 63;
+            this.btnbsct.Text = "Bổ sung chi tiết";
+            this.btnbsct.UseVisualStyleBackColor = false;
+            this.btnbsct.Click += new System.EventHandler(this.btnbsct_Click);
+            // 
+            // btnReloadd
+            // 
+            this.btnReloadd.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnReloadd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReloadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReloadd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnReloadd.Location = new System.Drawing.Point(752, 200);
+            this.btnReloadd.Name = "btnReloadd";
+            this.btnReloadd.Size = new System.Drawing.Size(98, 54);
+            this.btnReloadd.TabIndex = 64;
+            this.btnReloadd.Text = "Load";
+            this.btnReloadd.UseVisualStyleBackColor = false;
+            this.btnReloadd.Click += new System.EventHandler(this.btnReloadd_Click);
+            // 
             // FormHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 450);
+            this.Controls.Add(this.btnReloadd);
+            this.Controls.Add(this.btnbsct);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label2);
@@ -356,6 +376,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngaylap;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tongtien;
         private System.Windows.Forms.ComboBox txtMaKH;
-        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnbsct;
+        private System.Windows.Forms.Button btnReloadd;
     }
 }
