@@ -68,7 +68,8 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void BaoCaoTonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormBaoCaoTon frm = new FormBaoCaoTon();
+            frm.Show();
         }
 
         private void DangXuatToolStripMenuItem_Click(object sender, EventArgs e)
@@ -90,6 +91,12 @@ namespace DoanQLNhaSach.GIAODIEN
           
            
 
+        }
+
+        private void BaoCaoNoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormBaoCaoNo frm = new FormBaoCaoNo();
+            frm.Show();
         }
     }
 }

@@ -52,6 +52,18 @@
     <Compile Include="GIAODIEN\FormBanSach.Designer.cs">
       <DependentUpon>FormBanSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="GIAODIEN\FormBaoCaoNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormBaoCaoNo.Designer.cs">
+      <DependentUpon>FormBaoCaoNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIAODIEN\FormBaoCaoTon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIAODIEN\FormBaoCaoTon.Designer.cs">
+      <DependentUpon>FormBaoCaoTon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GIAODIEN\FormChuongTrinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +139,12 @@
     </Compile>
     <EmbeddedResource Include="GIAODIEN\FormBanSach.resx">
       <DependentUpon>FormBanSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormBaoCaoNo.resx">
+      <DependentUpon>FormBaoCaoNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIAODIEN\FormBaoCaoTon.resx">
+      <DependentUpon>FormBaoCaoTon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GIAODIEN\FormChuongTrinh.resx">
       <DependentUpon>FormChuongTrinh.cs</DependentUpon>
