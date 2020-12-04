@@ -85,5 +85,10 @@ namespace DoanQLNhaSach.GIAODIEN
                 txtMk.UseSystemPasswordChar = true;
             }
         }
+
+        private void cbbQuyen_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
