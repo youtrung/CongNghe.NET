@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 12.125" name="QLNS">
+  <DataContextMoniker Name="/QLNSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="eee8e3bc-2831-4aaa-8609-0ea4555dbdf5" absoluteBounds="6.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QLNSDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="907f192c-854a-418e-9257-59a4735d1d6d" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="476e7b1f-6af5-427c-9418-4a614b45bce9" absoluteBounds="3.5, 6.875, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/QLNSDataContext/Sach" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ad43613-ba4f-4bf0-91c6-d35546a5e1be" absoluteBounds="3.515, 7.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1f91e68-1ce0-4831-aca7-72219a2ba386" absoluteBounds="6.25, 7.375, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/QLNSDataContext/ChiTietPhieuNhap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72fe0c75-f385-44e5-97d7-fe2dc11d50fe" absoluteBounds="6.265, 7.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12c661d0-022d-410d-a7ef-ec17959f0d10" absoluteBounds="3.5, 3.375, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/QLNSDataContext/HoaDon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20dba016-dbfd-4124-aec0-ef7683700927" absoluteBounds="3.515, 3.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c0cc5c5-a0cf-4bce-9753-a8c43008b4b4" absoluteBounds="0.75, 1.875, 2, 2.347801106770834">
+      <DataClassMoniker Name="/QLNSDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a2e2715-1b6a-4696-a57a-6c416ca1d2d5" absoluteBounds="0.765, 2.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="71118970-66a7-4f6b-8924-69404e92f3c4" absoluteBounds="8.75, 2.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/QLNSDataContext/NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec351f22-6279-4e76-be72-f247c6444b49" absoluteBounds="8.765, 3.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b26f08d6-74d6-40ad-ad85-99082a348fec" absoluteBounds="6.25, 3.5, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/QLNSDataContext/PhieuBan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="880f9799-364f-443e-a31a-621ec9acbf5d" absoluteBounds="6.265, 3.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e4d89518-8967-4d02-bc9c-490e013f88e0" absoluteBounds="3.5, 10.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/QLNSDataContext/PhieuNhap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c476795b-8f6a-4b0c-ab43-3c9e0288cc69" absoluteBounds="3.515, 10.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6d86603-bb0b-49b5-a7ee-6c0db75c587d" absoluteBounds="3.5, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLNSDataContext/PhieuThu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a977dc7d-2253-4ff1-bc8c-40c513937052" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e15a5304-0f0b-4cef-9893-d8f8829208d2" absoluteBounds="8.75, 5.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/QLNSDataContext/QuyDinh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5bac6654-79ab-4354-95e8-ee0bf3e93bfa" absoluteBounds="8.765, 6.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 8.26044840494792); (6.25 : 8.26044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/Sach/Sach_ChiTietPhieuNhap" />
+      <nodes>
+        <classShapeMoniker Id="476e7b1f-6af5-427c-9418-4a614b45bce9" />
+        <classShapeMoniker Id="c1f91e68-1ce0-4831-aca7-72219a2ba386" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.79890055338542); (3.5 : 3.79890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/KhachHang/KhachHang_HoaDon" />
+      <nodes>
+        <classShapeMoniker Id="6c0cc5c5-a0cf-4bce-9753-a8c43008b4b4" />
+        <classShapeMoniker Id="12c661d0-022d-410d-a7ef-ec17959f0d10" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.19314697265625); (6.25 : 4.19314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/HoaDon/HoaDon_PhieuBan" />
+      <nodes>
+        <classShapeMoniker Id="12c661d0-022d-410d-a7ef-ec17959f0d10" />
+        <classShapeMoniker Id="b26f08d6-74d6-40ad-ad85-99082a348fec" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.875); (5.875 : 6.5); (5.875 : 4.57097245898438); (6.25 : 4.57097245898438)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/Sach/Sach_PhieuBan" />
+      <nodes>
+        <classShapeMoniker Id="476e7b1f-6af5-427c-9418-4a614b45bce9" />
+        <classShapeMoniker Id="b26f08d6-74d6-40ad-ad85-99082a348fec" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.1931469726562); (7.25 : 11.1931469726562); (7.25 : 9.14589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/PhieuNhap/PhieuNhap_ChiTietPhieuNhap" />
+      <nodes>
+        <classShapeMoniker Id="e4d89518-8967-4d02-bc9c-490e013f88e0" />
+        <classShapeMoniker Id="c1f91e68-1ce0-4831-aca7-72219a2ba386" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.22679768880208); (3.5 : 2.22679768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLNSDataContext/KhachHang/KhachHang_PhieuThu" />
+      <nodes>
+        <classShapeMoniker Id="6c0cc5c5-a0cf-4bce-9753-a8c43008b4b4" />
+        <classShapeMoniker Id="b6d86603-bb0b-49b5-a7ee-6c0db75c587d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
