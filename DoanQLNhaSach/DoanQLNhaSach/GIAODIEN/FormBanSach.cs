@@ -153,12 +153,13 @@ namespace DoanQLNhaSach.GIAODIEN
             int check = s.TonCuoi - soluong;
             KhachHang kh = db.KhachHangs.Where(r => r.MaKh == txtMaKH2.Text).SingleOrDefault();
             var kt = db.PhieuBans.Where(t => t.MaPhieuBan == mahd && t.MaSach == masach).SingleOrDefault();
-            if (check <qdTonBantoithieu)
+             var qd = db.QuyDinhs.Where(t=>t.MaQuyDinh==1.ToString()).SingleOrDefault();
+            if (check < Int32.Parse(qd.TonBanToiThieu))
             {
                 MessageBox.Show("Số lượng tồn của sách này sau khi bán đã nhỏ hơn quy định");
                 return;
             }
-            if (Int32.Parse(kh.TongNo) >qdKhNotoithieu)
+            if (Int32.Parse(kh.TongNo) > qd.KHNoToiThieu)
             {
                 MessageBox.Show("Tiền nợ của khách hàng đã vượt quá quy định");
                 return;
