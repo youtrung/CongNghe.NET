@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static DoanQLNhaSach.GIAODIEN.FormLogin;
+using DoanQLNhaSach.GIAODIEN.FormLogin;
 
 namespace DoanQLNhaSach.GIAODIEN
 {
