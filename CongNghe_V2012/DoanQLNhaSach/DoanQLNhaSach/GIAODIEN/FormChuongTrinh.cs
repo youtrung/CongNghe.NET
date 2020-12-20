@@ -103,5 +103,11 @@ namespace DoanQLNhaSach.GIAODIEN
         {
         
         }
+
+        private void DanhSachNVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormNhanVien frm = new FormNhanVien();
+            frm.Show();
+        }
     }
 }
