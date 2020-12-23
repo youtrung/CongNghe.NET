@@ -43,8 +43,23 @@ namespace DoanQLNhaSach.GIAODIEN
 
                                };
                 dgvBaoCaoNo.DataSource = dataLinQ;
-                
+             
             }
+        }
+        private void baocaoNo()
+        {
+            using (QLNSDataContext db = new QLNSDataContext())
+            {
+                var dataLinQ = from nxb in db.KhachHangs select nxb;
+                CrystalReportNo report = new CrystalReportNo();
+               
+                crytalBaocaono.ReportSource = report;
+            }
+        }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            baocaoNo();
         }
     }
 }

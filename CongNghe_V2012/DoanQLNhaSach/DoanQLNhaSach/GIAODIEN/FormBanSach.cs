@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoanQLNhaSach.GIAODIEN;
 
 namespace DoanQLNhaSach.GIAODIEN
 {
     public partial class FormBanSach : Form
     {
         QLNSDataContext db = new QLNSDataContext();
+        public static string ktBtn;
         public FormBanSach()
         {
             InitializeComponent();
@@ -62,7 +64,9 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void btnMaSach_Click(object sender, EventArgs e)
         {
+            
             FormSach frm = new FormSach();
+            FormSach.frag = "ok";
             frm.ShowDialog();
             txtMaSach.Text = getMaSach;
             hienthiSach();

@@ -18,6 +18,8 @@ namespace DoanQLNhaSach.GIAODIEN
             InitializeComponent();
         }
         int flag = -1;
+        public static string frag = "1";
+        
         public bool IsNumber(string pValue)
         {
             foreach (Char c in pValue)
@@ -31,9 +33,7 @@ namespace DoanQLNhaSach.GIAODIEN
         {
             
             cbTimTheLoai.DisplayMember = "TheLoai";
-            cbTimTheLoai.DataSource = db.Saches;
-
-
+            cbTimTheLoai.DataSource = db.Saches;         
             cbTimTheLoai.SelectedIndex = 0;
             loadSach();
 
@@ -410,12 +410,14 @@ namespace DoanQLNhaSach.GIAODIEN
 
         private void btnChon_Click(object sender, EventArgs e)
         {
+            
             if(txtMaSach.Text=="")
             {
                 MessageBox.Show("Vui Lòng Chọn Sách Trong bảng ");
             }
             Form_ChiTietPhieuNhapSach.getMS = txtMaSach.Text;
             FormBanSach.getMaSach = txtMaSach.Text;
+            btnChon.Enabled = false;
             this.Close();
         }
 
